@@ -1,0 +1,142 @@
+/*widget_calendar*/
+#calendar_wrap {
+	width: 100%;
+	margin-bottom: 0;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	@media (min-width: 768px) and (max-width: 992px) {
+		& {
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+	}
+}
+#today {
+	color: $mainColor;
+	font-weight: 500;
+}
+.widget_calendar {
+	table{
+		width: 100%;
+		margin: 0;
+		position: relative;
+		text-align: center;
+		background-color: $lightColor;
+	}
+	caption{
+		line-height: 1;
+		font-size: 24px;
+		padding: 18px 0 18px;
+		text-align: center;
+		color: $lightColor;
+		background-color: $mainColor;
+	}
+	thead {
+		background-color: $darkColor;
+		border: 1px solid $darkColor;
+		border-width: 7px 1px 7px 1px;
+		color: $lightColor;
+		th {
+			font-weight: 300;
+			&:first-child {
+				padding-left: 30px;
+			}
+			&:last-child {
+				padding-right: 30px;
+			}
+		}
+	}
+	tbody {
+		background-color: $backgroundColor;
+		font-weight: 300;
+		tr {
+			&:first-child {
+				td {
+					padding-top: 29px;
+				}
+			}
+			&:last-child {
+				td {
+					padding-bottom: 30px;
+				}
+			}
+		}
+		td{
+			border: none;
+			padding: 3px 4px;
+			position: relative;
+			&:first-child {
+				padding-left: 30px;
+			}
+			&:last-child {
+				padding-right: 30px;
+			}
+		}
+		td a{
+			font-weight: 700;
+			color: $mainColor;
+		}
+		td a:hover{
+			color: $mainColor;
+		}
+
+	}
+
+	th {
+		text-align: center;
+		border: 0;
+		color: inherit;
+	}
+	td {
+		border: 0;
+	}
+
+	tfoot {
+		position: absolute;
+		top: -3px;
+		right: 0;
+		left: 0;
+		td {
+			position: absolute;
+			top: 0;
+			a {
+				color: $lightColor;
+				text-align: center;
+				font-size: 0;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				display: inline-block;
+				&:hover {
+					color: $lightColor;
+					background-color: $mainColor;
+					border-color: $mainColor;
+				}
+			}
+		}
+		#prev {
+			left: 0;
+			padding:0;
+			a {
+				border-right: 1px solid rgba($lightColor, 0.2);
+				&:before {
+					font-size: 14px;
+					font-family: 'rt-icons-2';
+					content: '\e7c4';
+				}
+			}
+		}
+		#next {
+			right: 0;
+			padding: 0;
+			a{
+				border-left: 1px solid rgba($lightColor, 0.2);
+				&:after{
+					font-size: 14px;
+					font-family: 'rt-icons-2';
+					content: '\e7c5';
+				}
+			}
+		}
+	}
+}

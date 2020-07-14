@@ -1,0 +1,122 @@
+/*
+**bootstrap overrides
+*/
+.modal-backdrop.in {
+	filter: alpha(opacity=80);
+	opacity: .8;
+}
+@import 'override_bootstrap/breadcrumbs';
+@import 'override_bootstrap/pagination';
+@import 'override_bootstrap/forms';
+@import 'override_bootstrap/carousel';
+@import 'override_bootstrap/accordion';
+@import 'override_bootstrap/datetimepicker';
+@import 'override_bootstrap/progressbar';
+@import 'override_bootstrap/navs_tabs';
+
+/* bs tables */
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+	padding: 13px 8px;
+	border-color: $borderColor;
+}
+.table {
+	border-top: 1px solid $borderColor;
+	border-bottom: 1px solid $borderColor;
+	td + th,
+	th + td,
+	th + th,
+	td + td {
+		border-left: 1px solid $borderColor;
+	}
+}
+.table-bordered>thead>tr>td, 
+.table-bordered>thead>tr>th {
+	border-bottom-width: 1px;
+}
+.table-responsive {
+	border: none;
+}
+
+/*bs buttons*/
+.btn {
+	padding: 18px 30px;
+	text-transform: uppercase;
+	margin: 0 2px 6px 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+li.media:before,
+li.media:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+/* bs dropdown menu */
+.dropdown-menu {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	border-color: $borderColorRGBA;
+	z-index: 1001;
+	font-size: 16px;
+	margin-top: 0;
+	[class*="right"] & {
+		right: 0;
+		left: auto;
+	}
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+	color: $darkgreyColor;
+	background-color: transparent;
+}
+
+.well {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border:none;
+	border-radius: 0;
+}
+/* our custom video placeholser*/
+.embed-responsive-3by2 {
+	padding-bottom: 66.666%;
+}
+.embed-placeholder {
+	&:after {
+		-webkit-transition: all 0.2s ease-in-out 0s;
+		-moz-transition: all 0.2s ease-in-out 0s;
+		-o-transition: all 0.2s ease-in-out 0s;
+		-ms-transition: all 0.2s ease-in-out 0s;
+		transition: all 0.2s ease-in-out 0s;
+		content: "";
+		background: url("../img/video.png") 50% 50% no-repeat;
+		position: absolute;
+		color: $lightColor;
+		font-size: 14px;
+		line-height: 56px;
+		width: 60px;
+		height: 42px;
+		text-align: center;
+		left: 50%;
+		top: 50%;
+		margin-left: -30px;
+		margin-top: -30px;
+	}
+}

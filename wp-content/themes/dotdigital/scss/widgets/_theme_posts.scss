@@ -1,0 +1,109 @@
+/*widget_popular_entries*/
+.widget_popular_entries.theme_posts {
+  background-color: $backgroundColor;
+  padding: 30px;
+  @media(min-width:768px){
+    padding: 35px 40px 35px 40px;
+  }
+  .page_footer & {
+    padding: 0;
+    background-color: transparent;
+  }
+  .widget-title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    .page_footer & {
+      margin-bottom: 30px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .media-left,
+  .media-right {
+    vertical-align: middle;
+  }
+  .media-body {
+    overflow: visible;
+    display: table-cell;
+    vertical-align: middle;
+    .title {
+      font-size: 16px;
+      text-transform: none;
+      font-weight: 600;
+      line-height: 19px;
+      margin: 0 0 5px;
+      a {
+        color: $fontColor2;
+        .ds & {
+          color: $fontColor;
+        }
+        &:hover {
+          color: $mainColor;
+        }
+      }
+      .page_footer & {
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+    p {
+      line-height: 20px;
+      margin: 0 0 5px;
+      height: 60px;
+      overflow: hidden;
+    }
+    .item-meta {
+      margin-bottom: 0;
+      line-height: 1;
+      > div {
+        display: inline-block;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+  .media-left {
+    padding-right: 20px;
+  }
+  a img,
+  .media-object {
+    max-width: 100px;
+    border: 0;
+    border-radius: 0;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .media-object {
+      max-width: 40px;
+    }
+  }
+  li {
+    margin-top: 0;
+    padding: 0 0 20px 0;
+    .page_footer & {
+      padding: 0 0 30px 0;
+    }
+  }
+  li:last-child {
+    padding-bottom: 0;
+  }
+}
+aside {
+  .widget_popular_entries {
+    .widget-title {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,0 +1,501 @@
+/*price tables*/
+.fw-pricing {
+	.default-col,
+	.highlight-col {
+		margin-bottom: 50px;
+        .fw-package {
+          position: relative;
+        }
+	}
+	.highlight-col {
+		.fw-package {
+			background-color: $darkColor;
+		}
+	}
+	.fw-default-row {
+		line-height: 29px;
+	}
+}
+
+.price-table,
+.price-table ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.price-table {
+	margin: 0;
+}
+/* price table with background */
+.price-table {
+	background-color: $greyColor;
+	.features-list li + li {
+		border-top: 1px solid $colorBorderColor;
+	}
+}
+.fw-pricing{
+	.plan-name {
+		padding: 28px 0 28px;
+		margin-bottom: 40px;
+		@media(min-width: 992px) {
+			margin-bottom: 60px;
+		}
+		display: block;
+		h3 {
+			text-transform: none;
+			font-size: 24px;
+			font-weight: 500;
+			text-align: center;
+			margin: 0;
+			color: $lightColor;
+		}
+	}
+	.color1 .plan-name {
+		background-color: $mainColor;
+	}
+	.color2 .plan-name {
+		background-color: $mainColor2;
+	}
+	.color3 .plan-name {
+		background-color: $mainColor3;
+	}
+	.color4 .plan-name {
+		background-color: $mainColor4;
+	}
+	.plan-price {
+		padding: 10px 0 42px;
+		position: relative;
+		color: $darkColor;
+		/* price */
+		span + span {
+			font-size: 24px;
+			font-weight: 500;
+			strong {
+				font-size: 54px;
+				font-weight: 500;
+				margin-left: 5px;
+			}
+			span.color1 {
+				color: $mainColor;
+			}
+			span.color2 {
+				color: $mainColor2;
+			}
+		}
+		/* per month */
+		p {
+			display: block;
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: bold;
+			letter-spacing: 0.2em;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 1;
+		}
+	}
+	.highlight-col {
+		.fw-package {
+			.plan-price {
+				color: $lightColor;
+			}
+		}
+	}
+	.features-list {
+		margin-top: 20px;
+		li {
+			margin: 10px 40px;
+			padding-top: 10px;
+		}
+		.enabled:before,
+		.disabled:before {
+			font-family: 'rt-icons-2';
+			font-size: 24px;
+			line-height: 1;
+			position: relative;
+			top: 5px;
+			right: 4px;
+			content: "\e116";
+			padding-right: 8px;
+			color: $darkgreyColor;
+		}
+		.disabled:before {
+			content: "\e117";
+		}
+	}
+}
+.call-to-action {
+	padding: 5px 40px 0;
+	@media(max-width: 340px) {
+		padding: 5px 30px 0;
+	}
+	.theme_button {
+		position: relative;
+		top: 40px;
+		&.inverse {
+			background-color: $greyColor;
+		}
+	}
+}
+.call-to-action .theme_button.color:hover,
+.call-to-action .theme_button.color:focus {
+	border-color: $mainColor2;
+	background-color: $mainColor2;
+}
+.highlight-col {
+	.theme_button {
+		&.inverse {
+			background-color: $lightColor;
+		}
+	}
+}
+.price-table.style1 {
+	border: 1px solid $borderColorRGBA;
+	.features-list li + li {
+		border-top: 1px solid $borderColorRGBA;
+	}
+	.plan-price {
+		background-color: $mainColor;
+		color: $lightColor;
+		margin: 1px -1px;
+	}
+}
+.price-table.style2 {
+	background-color: $backgroundColor;
+	.plan-name {
+		background-color: $mainColor;
+		padding: 30px 0;
+	}
+	.plan-price {
+		padding-bottom: 0;
+		color: $darkgreyColor;
+	}
+
+	.enabled:before,
+	.disabled:before {
+		font-family: 'rt-icons-2';
+		content: "\e621";
+		padding-right: 13px;
+		color: $mainColor;
+	}
+	.disabled:before {
+		color: $darkgreyColor;
+		content: "\e622";
+	}
+
+}
+
+//unyson icons
+.fw-package.price-table {
+	hr {
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-color: $borderColorRGBA;
+		@media (min-width: 1200px) {
+			margin-left: 60px;
+			margin-right: 60px;
+		}
+	}
+}
+.fw-switch-row{
+	display: inline-block;
+	font-size: 24px;
+	position: relative;
+	top: 4px;
+	margin-right: 4px;
+}
+.fw-switch-row + .fw-default-row {
+	display: inline-block;
+}
+.desc-col {
+	.fw-default-row {
+		margin: 20px 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.highlight-col .price-table{
+		.plan-name {
+			padding: 28px 0 28px;
+			margin-top: -30px;
+		}
+		.plan-price {
+			span:first-child {
+				&:before {
+					margin-top: -44px;
+				}
+			}
+		}
+	}
+}
+
+// Pricing plan
+.owl-carousel{
+	.pricing-plan{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.pricing-plan {
+	text-align: center;
+	padding: 50px 25px;
+	position: relative;
+	z-index: 1;
+
+	@media (max-width: 991px) and (min-width: 576px) {
+		padding: 60px 50px;
+	}
+
+	@media(min-width: 1200px) {
+		padding: 160px 20px 60px;
+		[class*='bg-'] {
+			margin-left: -61px;
+			margin-right: -61px;
+		}
+		.plan-name[class*='bg-'] {
+			margin-top: -57px;
+		}
+	}
+
+	&:hover{
+		&::after{
+			opacity: 1;
+		}
+	}
+
+	&.pattern_1,
+	&.pattern_2,
+	&.pattern_3{
+		position: relative;
+		&::after{
+			position: absolute;
+			content: '';
+			display: inline-block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			background-size: contain;
+			background-repeat: no-repeat;
+			opacity: 1;
+		}
+	}
+	&.pattern_1{
+		&::after{
+			background-image: url("../img/patterns/price_pattern_1.png");
+			background-position: top right;
+		}
+	}
+
+	&.pattern_2{
+		&::after{
+			background-image: url("../img/patterns/price_pattern_2.png");
+			background-position: bottom left;
+		}
+	}
+
+	&.pattern_3{
+		&::after{
+			background-image: url("../img/patterns/price_pattern_3.png");
+			background-position: top right;
+		}
+	}
+
+	.price-wrap {
+		font-family: 'Poppins', sans-serif;
+		color: $darkgreyColor;
+		&.underline{
+			padding-bottom: 0;
+			&::after{
+				bottom: 5px;
+				background-color: $lightColor;
+			}
+		}
+
+		&[class*='bg-'] {
+			padding: 30px 30px 10px;
+			margin-top: 50px;
+			margin-bottom: 0;
+		}
+	}
+	[class*='bg-'] {
+		padding: 10px 30px 30px;
+		margin-left: -41px;
+		margin-right: -41px;
+	}
+	.plan-name {
+		&[class*='bg-'] {
+			padding-top: 30px;
+			margin-top: -40px;
+		}
+		h3 {
+			font-size: 30px;
+			font-weight: 500;
+			letter-spacing: 0;
+			@media (max-width: 1199px) {
+				font-size: 20px;
+			}
+		}
+		margin-bottom: 0;
+	}
+
+	.custom-wrap{
+		font-weight: bold;
+		line-height: 1;
+		letter-spacing: -1px;
+		margin-top: 20px;
+		color: $darkgreyColor;
+		.plan-value{
+			font-size: 60px;
+		}
+		.plan-value-units{
+			font-size: 37px;
+		}
+	}
+
+	.plan-description {
+		text-transform: uppercase;
+		color: $darkgreyColor;
+		letter-spacing: 2px;
+		font-weight: 700;
+		margin-top: 9px;
+		font-size: 12px;
+		line-height: 1;
+	}
+
+	hr{
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+
+	.plan-sign{
+		font-weight: 500;
+		font-size: 24px;
+		position: relative;
+		color: $mainColor;
+	}
+
+	.plan-price{
+		font-size: 54px;
+		line-height: 1;
+		position: relative;
+		font-weight: 600;
+		color: $mainColor;
+	}
+
+	.plan-decimals {
+		font-size: 24px;
+		position: relative;
+		font-weight: 400;
+		color: $fontColor;
+	}
+
+	.plan-features {
+		display: flex;
+		justify-content: center;
+		text-align: left;
+		margin-top: 42px;
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media (max-width: 1024px) {
+			margin-top: 25px;
+		}
+
+		@media (max-width: 991px) and (min-width: 576px) {
+			margin-top: 42px;
+		}
+
+		.list-unstyled{
+			padding-left: 0;
+			list-style: none;
+			color: $fontColor;
+			margin-bottom: 0;
+			li{
+				line-height: 23px;
+			}
+		}
+	}
+
+	.plan-button {
+		margin-top: 55px;
+		@media (max-width: 1199px) {
+			margin-top: 45px;
+		}
+		.theme_button{
+			min-width: auto;
+			@media (max-width: 1199px) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+
+	//featured border
+	&.plan-featured {
+		overflow: hidden;
+		position: relative;
+		@media (min-width: 992px) {
+			top: -30px;
+		}
+		&.main::before{
+			background-color: $mainColor;
+		}
+		&.main2::before{
+			background-color: $mainColor2;
+		}
+		&.main3::before{
+			background-color: $mainColor3;
+		}
+		&.main4::before{
+			background-color: $mainColor4;
+		}
+	}
+
+	&.cs{
+		.plan-description{
+			color: $lightColor;
+		}
+		.list-styled,
+		.list-unstyled{
+			color: $lightColor;
+			li::before{
+				color: $lightColor;
+			}
+		}
+		.special-heading .underline:after{
+			background-color: $lightColor;
+		}
+		.plan-sign,
+		.plan-price{
+			color: $lightColor;
+		}
+		.plan-decimals{
+			color: $lightColor;
+		}
+	}
+
+	&.ds{
+		.plan-description{
+			color: $lightColor;
+		}
+		.list-styled,
+		.list-unstyled{
+			color: $lightColor;
+		}
+		.plan-decimals{
+			color: $lightColor;
+		}
+	}
+}
+
+.ds .fw-pricing .plan-price{
+	color: $lightColor;
+}

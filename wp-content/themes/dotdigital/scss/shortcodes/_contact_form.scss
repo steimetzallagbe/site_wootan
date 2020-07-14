@@ -1,0 +1,119 @@
+/*contacts*/
+.contact-form {
+	position: relative;
+	z-index: 3;
+	&.ls {
+		background-color: darken($lightColor, 2);
+	}
+	&.ls.ms {
+		background-color: darken($greyColor, 1);
+	}
+	label[for] {
+	  display: none;
+	}
+	textarea {
+		max-height: 140px;
+	}
+}
+.contact-form.parallax {
+	padding: 50px 50px 35px;
+	background-image: url(../img/parallax/progress.jpg);
+}
+.contact-form-respond {
+	display: block;
+	font-weight: 800;
+}
+.contact-form-respond:before{
+	font-family: 'rt-icons-2';
+	content: "\e71a";
+	padding-right: 10px;
+}
+.contact-form p {
+  margin-bottom: 10px; 
+  position: relative;
+}
+.contact-form-submit {
+	.theme_button {
+		margin-right: 6px;
+	}
+}
+.contact-form.transparent-background .form-control{
+	background-color: transparent;
+}
+.contact-email {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+@media (max-width: 767px) {
+	.contact-email {
+		font-size: 20px;
+		margin-bottom: 6px;
+	}
+
+	.contact-form.parallax {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+//for wordpress - unyson forms
+.wrap-forms .form-group {
+	p {
+		margin: 10px 0 0;
+	}
+	&.has-placeholder label {
+		display: none;
+	}
+}
+.wrap-forms {
+	.field-select {
+		label {
+			display: inline;
+		}
+	}
+}
+#messages_modal {
+	.fw-messages-wrap {
+		position: absolute;
+		left: 50%;
+		top: 10%;
+		margin-left: -150px;
+		width: 300px;
+	}
+	ul {
+		margin-bottom: 0;
+	}
+}
+
+//fields text and placeholders aligment
+.form-wrapper.text-center {
+	.wrap-forms {
+		input,
+		textarea {
+			text-align: center;
+		}
+	}
+}
+.form-wrapper.text-left {
+	.wrap-forms {
+		input,
+		textarea {
+			text-align: left;
+		}
+		.theme_button {
+			text-align: center;
+		}
+	}
+}
+.form-wrapper.text-right {
+	.wrap-forms {
+		input,
+		textarea {
+			text-align: right;
+		}
+		.theme_button {
+			text-align: center;
+		}
+	}
+}

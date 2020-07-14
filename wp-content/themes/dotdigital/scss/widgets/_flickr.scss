@@ -1,0 +1,11 @@
+/*widget_flickr*/
+.widget_flickr {
+	li {
+		display: inline-block;
+		margin: 0 10px 10px 0;
+	}
+	img {
+		max-width: 70px;
+		border-radius: 1px;
+	}
+}

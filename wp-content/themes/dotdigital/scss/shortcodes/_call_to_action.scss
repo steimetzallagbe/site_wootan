@@ -1,0 +1,54 @@
+/* Call To Action */
+.fw-theme-call-to-action {
+  border: 0;
+  padding: 0;
+  display: block;
+  margin-bottom: 0;
+  .section_header {
+    margin-bottom: 20px;
+  }
+  .fw-action-wrap {
+    display: inline-block;
+    color: $fontColor;
+    .fw-action-desc {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 30px;
+
+      font-weight: 300;
+      strong {
+        color: $darkgreyColor;
+        font-weight: 500;
+      }
+    }
+  }
+  @media(min-width:768px) {
+    .fw-action-wrap {
+      display: flex;
+      justify-content: space-around;
+      .fw-action-desc {
+        margin-right: 35px;
+      }
+      .fw-action-btn {
+        margin-left: 0;
+      }
+    }
+  }
+  @media(min-width:992px) {
+    .fw-action-wrap {
+      .fw-action-desc {
+        margin-right: 90px;
+      }
+    }
+  }
+}
+.ds {
+  .fw-action-wrap {
+    color: $fontColorLight;
+    .fw-action-desc {
+      span {
+        color: $lightColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* 
+timetable 
+*/
+#timetable {
+	span {
+		display: block;
+	}
+	th, td {
+		vertical-align: middle;
+		font-weight: normal;
+		text-align: center;
+		padding: 25px 5px;
+	}
+	thead {
+		color: $lightColor;
+		th {
+			border: 1px solid $colorBorderColor;
+			border-width: 0 1px;
+		}
+	}
+	tbody {
+		th, td {
+			border: 1px solid $borderColor;
+			-webkit-transition: all 0.2s ease-in-out 0s;
+			-moz-transition: all 0.2s ease-in-out 0s;
+			-o-transition: all 0.2s ease-in-out 0s;
+			-ms-transition: all 0.2s ease-in-out 0s;
+			transition: all 0.2s ease-in-out 0s;
+		}
+		.current {
+			background-color: $mainColor;
+			border-color: $mainColor;
+			a {
+				color: $lightColor;
+			}
+		}
+	}
+}

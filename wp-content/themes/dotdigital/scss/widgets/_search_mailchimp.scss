@@ -1,0 +1,339 @@
+
+/*
+widget_search,
+widget_mailchimp
+*/
+.widget_mailchimp {
+	overflow: hidden;
+}
+.widget_mailchimp p {
+	padding-top: 10px;
+}
+.widget_search .form-inline,
+.widget_product_search form,
+.widget_mailchimp .form-inline{
+		position: relative;
+		.form-control { width: 100%; margin: 0;}
+		label {display: block;}
+		label[for] {
+			display: none;
+		}
+		.page_topline & {
+			display: inline-block;
+			label {
+				margin: 0;
+			}
+		}
+}
+.widget_search .form-inline .form-group,
+.widget_mailchimp .form-inline .form-group{
+	display: block;
+	vertical-align: top;
+	position: relative;
+}
+
+.text_for_footer {
+	margin-bottom: 30px;
+}
+
+.cs.page_topline  .form-control {
+	color: $lightColor;
+
+	&:-moz-placeholder {
+		color: $lightColor;
+	}
+	&::-moz-placeholder {
+		color: $lightColor;
+	}
+	&:-ms-input-placeholder {
+		color: $lightColor;
+	}
+	&::-webkit-input-placeholder {
+		color: $lightColor;
+	}
+	&:focus:-moz-placeholder {
+		color: transparent;
+	}
+	&:focus::-moz-placeholder {
+		color: transparent;
+	}
+	&:focus:-ms-input-placeholder {
+		color: transparent;
+	}
+	&:focus::-webkit-input-placeholder {
+		color: transparent;
+	}
+}
+
+.widget_search .form-inline [type="text"],
+.widget_product_search [type="search"],
+.widget_mailchimp .form-inline [type="email"]{
+	padding-right: 50px;
+	display: block;
+	width: 100%;
+}
+@media(min-width: 768px) {
+	.widget_search .form-group.inline-block, 
+	.widget_mailchimp .form-group.inline-block {
+		min-width: 370px;
+		margin-right: 5px;
+	}
+}
+.page_topline {
+	.widget_search .form-group .form-control {
+		height: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+		background-color: transparent;
+		box-shadow: none;
+		font-style: italic;
+		min-width: 230px;
+		border: none;
+		color: $fontColor;
+		&:-moz-placeholder {
+			color: $fontColor;
+		}
+		&::-moz-placeholder {
+			color: $fontColor;
+		}
+		&:-ms-input-placeholder {
+			color: $fontColor;
+		}
+		&::-webkit-input-placeholder {
+			color: $fontColor;
+		}
+		&:focus:-moz-placeholder {
+			color: transparent;
+		}
+		&:focus::-moz-placeholder {
+			color: transparent;
+		}
+		&:focus:-ms-input-placeholder {
+			color: transparent;
+		}
+		&:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
+	}
+}
+.widget_search .form-inline .theme_button,
+.widget_product_search [type="submit"],
+.widget_mailchimp .form-inline .theme_button {
+	font-size: 0;
+	padding: 12px;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	background-color: transparent;
+	color: $mainColor;
+	.error404 & {
+		background-color: transparent;
+		color: $mainColor2;
+	}
+	&:before {
+		font-size: 14px;
+		content: "\f002";
+		font-family: 'FontAwesome';
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $darkgreyColor;
+		.ds & {
+			color: $fontColorLight;
+		}
+	}
+	.page_topline & {
+		height: 40px;
+		width: 40px;
+		padding: 0;
+		top: 0;
+		background: transparent;
+		color: $mainColor2;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $mainColor;
+		}
+		&:before {
+			font-size: 14px;
+		}
+	}
+}
+.widget_mailchimp .form-inline .theme_button:before {
+	content: "\e65c";
+}
+
+/*wordpress - widget_mc4wp_form_widget*/
+.widget_mc4wp_form_widget{
+	label {
+		display: none;
+	}
+	.mc4wp-form-inner {
+		position: relative;
+	}
+	.mc4wp-form-fields {
+		position: relative;
+		margin-top: -5px;
+	}
+	[type*="email"] {
+		width: 100%;
+		padding-right: 40px;
+		border-style:solid;
+		.ds & {
+			background-color: $darkColor;
+		}
+		.ds.page_footer & {
+			background-color: $lightColor;
+			border-color: $darkgreyColor;
+		}
+	}
+	[type*="submit"] {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 60px;
+		width: 60px;
+		font-size: 0;
+		color: $mainColor;
+		background-color: transparent;
+		padding: 0;
+		margin-bottom: 0;
+		box-shadow: none;
+		border: none;
+		border-radius: 0;
+		-webkit-transition: all 0.4s linear 0s;
+		-moz-transition: all 0.4s linear 0s;
+		-o-transition: all 0.4s linear 0s;
+		-ms-transition: all 0.4s linear 0s;
+		transition: all 0.4s linear 0s;
+		.cs & {
+			color: $lightColor;
+		}
+		&:before {
+			font-size: 14px;
+			content: "\f0e0";
+			font-family: 'FontAwesome';
+		}
+		&:hover,
+		&:focus {
+			border: none;
+			color: $darkgreyColor;
+			background-color: transparent;
+			.cs & {
+				color: $mainColor;
+			}
+		}
+	}
+}
+
+.shortcode-widget-area {
+	.widget_mc4wp_form_widget {
+		.mc4wp-form-inner {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.text-block.mailchimp {
+	.text_for_footer {
+		display: none;
+	}
+	.mc4wp-form-inner {
+		position: relative;
+		.form-control {
+			background: $lightColor;
+			text-align: left !important;
+		}
+		label {
+			display: none;
+		}
+		[type*="submit"] {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 60px;
+			width: 60px;
+			font-size: 0;
+			color: $mainColor;
+			background-color: transparent;
+			padding: 0;
+			margin-bottom: 0;
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			-webkit-transition: all 0.4s linear 0s;
+			-moz-transition: all 0.4s linear 0s;
+			-o-transition: all 0.4s linear 0s;
+			-ms-transition: all 0.4s linear 0s;
+			transition: all 0.4s linear 0s;
+			&:before {
+				font-size: 14px;
+				content: "\f0e0";
+				font-family: 'FontAwesome';
+			}
+			&:hover,
+			&:focus {
+				border: none;
+				color: $darkgreyColor;
+				background-color: transparent;
+				.cs & {
+					color: $mainColor;
+				}
+			}
+		}
+	}
+	&.max-270 {
+		.mc4wp-form-inner {
+			max-width: 270px;
+		}
+	}
+
+	.mc4wp-form-inner {
+		.text-center & {
+			margin: 0 auto;
+		}
+		.text-md-right & {
+			@media(min-width: 992px) {
+				float: right;
+			}
+		}
+	}
+}
+
+.widget_search.special {
+	background-color: $darkColor;
+	background-image: url(../img/texture.png);
+	background-size: cover;
+	padding: 20px;
+	position: relative;
+	@media(min-width:768px){
+		padding: 35px 40px 35px 40px;
+	}
+	&:before {
+		display: block;
+		content: url(../img/search_icon_bg.png);
+		position: absolute;
+		right: -20px;
+		top: -20px;
+	}
+	.widget-title {
+		margin-top: 0;
+		margin-bottom: 22px;
+		color: $lightColor;
+	}
+	input[type="search"],
+	.form-control {
+		background-color: $lightColor;
+	}
+}
+

@@ -1,0 +1,18 @@
+/* widget_theme_post_tabs */
+.widget_theme_post_tabs {
+	.nav-tabs > li > a {
+		padding: 10px 15px;
+	}
+	.item-likes-word {
+		display: none;
+	}
+	[class*='rt-icon'] {
+		line-height: 0;
+	}
+	.vertical-item {
+		margin-bottom: 15px;
+	}
+	.pull-right {
+		margin-left: 10px;
+	}
+}

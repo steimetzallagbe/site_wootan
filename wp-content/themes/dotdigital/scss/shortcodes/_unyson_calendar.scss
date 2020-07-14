@@ -1,0 +1,268 @@
+/* events calendar */
+//for wordpress - unyson events calendar
+div .fw-shortcode-calendar-wrapper .page-header h3,
+div .btn-group button[data-calendar-nav],
+div .btn-group button[data-calendar-nav*='today'],
+div #cal-slide-content a.event-item {
+	color: $darkgreyColor;
+}
+div #cal-slide-content a.event-item {
+	text-decoration: none !important;
+	color: $darkColor;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+div #cal-day-box .time-col,
+div #cal-day-box .cal-row-head,
+div #cal-day-box .cal-day-hour,
+div #cal-day-box .cal-row-head,
+div #cal-day-box .cal-day-hour,
+div #cal-day-box .cal-day-hour .cal-day-hour-part,
+div .cal-week-box .cal-column,
+div .cal-row-fluid.cal-row-head [class*="cal-cell"],
+div .cal-week-box .cal-row-head [class*="cal-cell"] small,
+div .cal-year-box [class*="span"],
+div .cal-month-box [class*="cal-cell"],
+div .cal-year-box .row-fluid,
+div .cal-month-box .cal-row-fluid{
+	border-color: $borderColorRGBA;
+}
+div .fw-shortcode-calendar .cal-week-box hr {
+	background-color: $borderColor;
+}
+
+div .cal-month-day.cal-day-today.event-day {
+	background-color: $mainColor;
+}
+div .cal-year-box [class*="span"]:hover,
+div .cal-month-box [class*="cal-cell"]:hover {
+	background-color: $mainColor2;
+}
+div #cal-slide-tick {
+	border-top-color: transparent;
+}
+
+div .cal-week-box .cal-day-today span[data-cal-date],
+div .cal-week-box .cal-day-today.event-day span[data-cal-date],
+div .cal-month-day.event-day span[data-cal-date] {
+	color: $lightColor;
+}
+
+div .cal-month-box [class*="cal-cell"]:hover span[data-cal-date] {
+	color: $lightColor;
+}
+
+
+/* Shortcode Overrides */
+.theme-calendar-wrappper.fw-shortcode-calendar-wrapper {
+	.cal-row-head {
+		border-right: 1px solid $darkColor;
+		background: $darkColor;
+	}
+	.page-header {
+		margin-bottom: 0;
+		background-color: $mainColor;
+		position: relative;
+		overflow: hidden;
+		.form-inline {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			text-align: center;
+			position: relative;
+			align-items: center;
+			.btn-group {
+				margin-right: 0;
+				h3 {
+					font-size: 30px;
+					font-weight: 500;
+					color: $lightColor;
+					@media(max-width: 480px) {
+						font-size: 20px;
+					}
+					@media(max-width: 768px) {
+						font-size: 26px;
+					}
+				}
+				button[data-calendar-nav] {
+					font-size: 14px;
+					margin-top: 0;
+					margin-bottom: 0;
+					color: $lightColor;
+					height: 80px;
+					width: 80px;
+					vertical-align: middle;
+					@media(max-width: 480px) {
+						height: 50px;
+						width: 50px;
+					}
+					@media(max-width: 768px) {
+						height: 60px;
+						width: 60px;
+					}
+					&:hover {
+						color: rgba($lightColor, 0.6);
+					}
+				}
+				&.pull-left {
+					border-right: 1px solid rgba($lightColor, 0.1);
+				}
+				&.pull-right {
+					border-left: 1px solid rgba($lightColor, 0.1);
+				}
+			}
+		}
+	}
+	.table-wrap {
+		margin-top: 0;
+	}
+}
+.theme-calendar {
+	.cal-month-day {
+		height: 120px;
+	}
+	.text-today {
+		font-size: 12px;
+		font-weight: 500;
+		position: absolute;
+		top: 3px;
+		right: 10px;
+		left: auto;
+		color: $mainColor;
+		text-transform: uppercase;
+		@media(max-width: 768px){
+			font-size: 10px;
+			line-height: 1.2;
+			letter-spacing: 0;
+		}
+	}
+	span[data-cal-date] {
+		position: relative;
+		margin: 40px 0 0 0;
+		width: 100%;
+		height: 26px;
+		text-align: center;
+		font-size: 24px;
+		font-weight: 500;
+		cursor: pointer;
+		color: $darkColor;
+		transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		@media(max-width: 768px){
+			font-size: 16px;
+			margin: 20px 0 0 0;
+		}
+
+		.ds &{
+			color: $lightColor;
+		}
+	}
+	.cal-month-box .cal-day-today span[data-cal-date]  {
+		font-size: 24px;
+		@media(max-width: 768px){
+			font-size: 16px;
+		}
+	}
+	.cal-day-today .list-events {
+		color: $fontColor;
+	}
+	.list-events {
+		position: absolute;
+		margin-top: auto;
+		left: auto;
+		font-size: 12px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		width: 100%;
+		text-align: center;
+		color: $fontColor;
+		@media(max-width: 768px){
+			font-size: 10px;
+			line-height: 1.2;
+			bottom: 0;
+			letter-spacing: 0;
+		}
+	}
+	.cal-month-box [class*="cal-cell"] {
+		background: $lightColor;
+		.ds & {
+			background: $darkColor;
+		}
+	}
+	.cal-row-fluid.cal-row-head [class*="cal-cell"] {
+		color: $lightColor;
+		font-size: 14px;
+		font-weight: 300;
+		background: $darkColor;
+		text-transform: uppercase;
+		border-right: 1px solid $darkColor;
+		border-bottom: 1px solid $darkColor;
+		padding: 14px 0;
+	}
+	.cal-month-box [class*="cal-cell"] {
+		border-right: 1px solid $borderColorRGBA;
+	}
+	.cal-year-box .row-fluid, .cal-month-box .cal-row-fluid {
+		border-bottom: 1px solid $borderColorRGBA;
+		border-left: 1px solid $borderColorRGBA;
+		border-right: 1px solid $borderColorRGBA;
+	}
+	.cal-month-box {
+		border-bottom: 1px solid $borderColorRGBA;
+	}
+	.cal-month-box .day-highlight{
+		border: none;
+		border-right: 1px solid $borderColorRGBA !important;
+	}
+	#cal-slide-box {
+		border-top: 0 solid #8c8c8c;
+		border-bottom: 0 solid #fff;
+	}
+	#cal-slide-content {
+		padding: 35px 20px 35px 30px;
+		border-left: 1px solid $borderColorRGBA;
+		border-right: 1px solid $borderColorRGBA;
+		border-bottom: 1px solid $borderColorRGBA;
+		background: $lightColor;
+        .ds & {
+          background: $darkgreyColor;
+        }
+	}
+	div .cal-month-day.event-day {
+		background-color: $backgroundColor;
+        .ds & {
+          background-color: $darkColor;
+        }
+		&:hover {
+			background-color: $mainColor2;
+			span[data-cal-date],
+			.list-events {
+				color: $lightColor;
+			}
+			.text-today {
+				color: $lightColor;
+			}
+		}
+		span[data-cal-date] {
+			color: $darkColor;
+		}
+		&.cal-day-outmonth {
+			background-color: $lightColor;
+			&:hover {
+				background-color: $mainColor2;
+				span[data-cal-date],
+				.list-events {
+					color: $lightColor;
+				}
+			}
+		}
+	}
+	.cal-month-day.cal-day-outmonth:hover span[data-cal-date] {
+		background-color: transparent;
+	}
+}

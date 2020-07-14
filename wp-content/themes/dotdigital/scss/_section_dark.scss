@@ -1,0 +1,684 @@
+/**common dark and dark muted sections - .ds and .ds.ms*/
+/**darkgrey section - .ds*/
+.dark-body {
+	background-color: $darkColor;
+}
+.ds {
+	background-color: $darkgreyColor;
+	color:$fontColorLight;
+	&.page_header {
+		background-color: $darkColor;
+	}
+}
+
+/**dark section - .ds.ms*/
+.ds.ms {
+	background-color: $darkgreyColor;
+}
+.ds.dark {
+	background-color: $darkColor;
+}
+
+.ds {
+	h1,
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6 {
+		color: $lightColor;
+
+		a {
+			color: $lightColor;
+			&:hover {
+				color: $mainColor;
+			}
+		}
+	}
+
+	.theme_button.color1:hover,
+	.theme_button.color2:hover,
+	.theme_button.color3:hover,
+	.theme_button.color4:hover,
+    .theme_button.color_white:hover {
+		color: $lightColor !important;
+	}
+
+	/* light section in dark section - .ds .ls */
+	.ls {
+		background-color: $lightColor;
+		color:$fontColor; 
+	
+		h1, 
+		h2, 
+		h3, 
+		h4, 
+		h5, 
+		h6 {
+			color: $darkgreyColor;
+			a {
+				color: inherit;
+				&:hover {
+					color: $mainColor;
+				}
+			}
+		}
+		a {
+			color: $mainColor;
+			&:hover {
+				color: $darkgreyColor;
+			}
+		}
+	}//.ls in .ds
+
+	.ls.ms {
+		background-color: $backgroundColor;
+		color:$fontColor;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: $darkgreyColor;
+			a {
+				color: inherit;
+				&:hover {
+					color: $mainColor;
+				}
+			}
+		}
+		a {
+			color: $mainColor;
+			&:hover {
+				color: $darkgreyColor;
+			}
+		}
+
+		.theme_button.inverse.color1,
+		.theme_button.inverse.color2,
+		.theme_button.inverse.color3,
+		.theme_button.inverse.color4 {
+			color: $darkColor !important;
+		}
+
+		.theme_button.color1:hover,
+		.theme_button.color2:hover,
+		.theme_button.color3:hover,
+		.theme_button.color4:hover,
+		.theme_button.color_white:hover {
+			color: $lightColor !important;
+		}
+	}//.ls.ms in .ds
+
+	label {
+		color: $lightColor;
+	}
+	a {
+		color: $greyColor;
+		&:hover {
+			color: $lightColor;
+		}
+	}
+	hr {
+		border-color: $borderColorRGBA;
+	}
+	blockquote, .blockquote {
+		color:$fontColorLight;
+		.author-job {
+			color: $fontColor;
+		}
+	}
+
+	.center-column {
+		a {
+			color: $darkgreyColor;
+			&:hover {
+				color: $mainColor;
+			}
+		}
+	}
+
+	/* Dark headers */
+	.header_welcome_text {
+	}
+	a.logo {
+		color: $lightColor;
+	}
+	.nav > li > a {
+		color: $lightColor;
+	}
+
+	.social-icon.color-icon:hover {
+		color: $lightColor;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="number"],
+	textarea,
+	select,
+	.form-control {
+		color: $fontColorLight;
+	}
+	.transp_black_bg {
+		.form-control {
+			border-color: $lightColor;
+		}
+
+		.form-control:-moz-placeholder {
+			color: $lightColor;
+		}
+		.form-control::-moz-placeholder {
+			color: $lightColor;
+		}
+
+		.form-control:-ms-input-placeholder {
+			color: $lightColor;
+		}
+
+		.form-control::-webkit-input-placeholder {
+			color: $lightColor;
+		}
+		.form-control:focus:-moz-placeholder {
+			color: transparent;
+		}
+		.form-control:focus::-moz-placeholder {
+			color: transparent;
+		}
+
+		.form-control:focus:-ms-input-placeholder {
+			color: transparent;
+		}
+
+		.form-control:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
+	}
+
+	.muted_background,
+	.well {
+		background-color: $lightColor;
+	}
+	.with_background {
+		background-color: $darkColor;
+	}
+	&.muted_section:before {
+		background-color: $darkBackgroundColor;
+	}
+	.with_border {
+		border-color: $borderColorRGBA;
+	}
+	.highlight {
+		color: $mainColor;
+		> * {
+			color: $mainColor !important;
+		}
+		a {
+			color: $mainColor;
+			&:hover {
+				color: $lightColor !important;
+			}
+		}
+	}
+	.highlight2 {
+		color: $mainColor2;
+		> * {
+			color: $mainColor2 !important;
+		}
+		a {
+			color: $mainColor2;
+			&:hover {
+				color: $lightColor !important;
+			}
+		}
+	}
+	.highlight3 {
+		color: $mainColor3;
+		> * {
+			color: $mainColor3 !important;
+		}
+		a {
+			color: $mainColor3;
+			&:hover {
+				color: $lightColor !important;
+			}
+		}
+	}
+	.black {
+		color: $lightColor;
+		border-color: $lightColor;
+	}
+	.lightfont {
+		color: $lightColor;
+		> * {
+			color: $lightColor !important;
+		}
+	}
+
+	.highlightlinks a {
+		color: $mainColor;
+		&:hover {
+			color: $lightColor;
+		}
+	}
+
+	.greylinks a {
+		color: $fontColorLight;
+		&:hover {
+			color: $mainColor;
+		}
+	}
+
+	.darklinks a {
+		color: $lightColor;
+		&:hover {
+			color: $mainColor;
+		}
+	}
+
+	.darklinks2 a {
+		color: $lightColor;
+		&:hover {
+			color: $mainColor2;
+		}
+	}
+
+
+	.categories-links.color1 a,
+	.categories-links.color2 a,
+	.categories-links.color3 a {
+		&:hover {
+			color: $lightColor;
+		}
+	}
+
+
+	&.with_top_border:before, 
+	&.with_bottom_border:after {
+		background-color: rgba($lightColor, 0.1);
+	}
+
+	.section_header + p {
+		color: inherit;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="number"],
+	textarea,
+	select,
+	.form-control {
+		background-color: $backgroundColor;
+	}
+
+	.with_background {
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select,
+		.form-control {
+			background-color: $darkgreyColor;
+			border-color: $darkgreyColor;
+		}
+	}
+
+	.form-control:focus {
+		border-color: $borderColorRGBA2;
+	}
+	.center-column  {
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select,
+		.form-control {
+			border-color: rgba($darkgreyColor, 0.5);
+		}
+	}
+
+	form label + [class*="icon-"] {
+		color: $lightColor;
+	}
+	.form-group-select {
+		&:before {
+		   border-color: $borderColorRGBA;
+		}
+	}
+
+	.form-control:-moz-placeholder {
+		color: $fontColorLight;
+		opacity: 1;
+	}
+	.form-control::-moz-placeholder {
+		color: $fontColorLight;
+		opacity: 1;
+	}
+
+	.form-control:-ms-input-placeholder {
+		color: $fontColorLight;
+	}
+
+	.form-control::-webkit-input-placeholder {
+		color: $fontColorLight;
+	}
+
+	.contact-form.transparent-background .form-control{
+		border-color: $borderColorRGBA;
+	}
+	.border-paragraphs p {color: $lightColor; border-color:$borderColorRGBA;}
+	.table,
+	.table-bordered,
+	.table th,
+	.table td,
+	table th,
+	table td {
+		border-color: $borderColorRGBA;
+	}
+	table th {
+		color: $lightColor;
+	}
+	.table_template th,
+	.table_template td {
+		border-color: transparent;
+	}
+	.table_template th {
+		color: inherit;
+	}
+
+	.table-striped>tbody>tr:nth-child(odd),
+	.table-striped>tbody>tr:nth-child(odd)>td, 
+	.table-striped>tbody>tr:nth-child(odd)>th {
+		border-color: $borderColorRGBA;
+		background-color: $darkBackgroundColor;
+		
+	}
+
+	.color-icon.bg-icon {
+		background-color: $lightColor;
+	}
+	.color-icon.bg-icon:hover {
+		color: $lightColor;
+	}
+
+	.color-bg-icon:hover {
+		background-color: $greyColor;
+	}
+	
+	/* tabs */
+	.tab-content {
+
+	}
+	.tab-content,.nav-tabs > li > a {
+		background-color: $darkgreyColor;
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+		border-color: $mainColor;
+		border-bottom-color: transparent;
+		background-color: $mainColor;
+		color: $lightColor;
+	}
+
+
+	.fw-package.price-table {
+		background-color: $darkgreyColor;
+		.fw-default-row {
+			color: $fontColor;
+		}
+		hr {
+			background-color: rgba($lightColor, 0.1);
+		}
+	}
+	.price-table.style2 {
+		background-color: $darkBackgroundColor;
+	}
+	.plan-name {
+		background-color: $darkBackgroundColor;
+	}
+	.features-list .disabled:before {
+		color: $lightColor;
+	}
+	ul.list1 {
+		color: $lightColor;
+	}
+	ul.list1 li {
+		border-color: $borderColorRGBA;
+	}
+
+	.owl-theme .owl-dots .owl-dot span {
+		border-color: $lightColor;
+	}
+	
+	.testimonials-carousel .media + p {
+		background-color: $darkBackgroundColor;
+	}
+
+	/* shortcode post carousel */
+	.shortcode-posts.carousel {
+		.text-owl-nav {
+			> div {
+				color: $lightColor;
+				&:hover {
+					color: rgba($lightColor, 0.5);
+				}
+			}
+			> div.owl-next {
+				&:before {
+					color: $lightColor;
+				}
+			}
+		}
+	}
+	
+	.side-item {
+		border-color: $borderColorRGBA;
+	}
+
+	.entry-excerpt {
+		color: $lightColor;
+	}
+	.comment-meta {
+		color: $lightColor;
+	}
+	.comment-meta .author_url,
+	.comment-meta .author_url span {
+		color: $lightColor;
+	}
+	.comment-list article:after {
+		background-color: $borderColorRGBA;
+	}
+	.comment-respond {
+		border-color: $borderColorRGBA;
+	}
+
+	.entry-tags {
+		border-color: $borderColorRGBA;
+	}
+
+	.widget_shopping_cart .cart_list,
+	.widget_recent_entries li,
+	.widget_recent_comments li,
+	.widget_archive li,
+	.widget_categories li,
+	.widget_meta li,
+	.widget_nav_menu li,
+	.widget_pages li,
+	.widget_popular_entries li {
+		border-color: $borderColorRGBA !important;
+	}
+
+	.widget_recent_entries li {
+		.post-date {
+			color: $mainColor;
+		}
+	}
+
+	.widget_nav_menu ul ul {
+		border-color: $borderColorRGBA;
+	}
+	.widget_popular_entries .media-heading {
+		color: $lightColor;
+	}
+	
+	.tweet_list li + li .tweet_right {
+		border-color: $borderColorRGBA;
+	}
+	.widget_shopping_cart li a + a {
+		color: $lightColor;
+		&:hover {
+		   color: $mainColor;
+		}
+	}
+	.widget .woocommerce-Price-amount {
+		color: $lightColor;
+	}
+	.summary {
+		.price {
+			color: $lightColor;
+			border-color: $borderColorRGBA;
+		}
+		.product_meta {
+			border-color: $borderColorRGBA;
+		}
+	}
+	.widget_price_filter .price_label {
+		color: $fontColorLight;
+	}
+
+	#calendar_wrap {
+		border-color: $borderColorRGBA;
+	}
+	.widget_calendar table {
+		background-color: $darkBackgroundColor;
+		border-color: $borderColorRGBA;
+	}
+	.widget_calendar tfoot td a {
+		border-color: $borderColorRGBA;
+	}
+
+	
+	.widget_calendar caption,
+	.widget_calendar thead,
+	.widget_calendar th {
+		color: $lightColor;
+	}
+	.widget_calendar tbody td a {
+	
+		&:hover {
+			color: $lightColor;
+		}
+	}
+
+	/* shop */
+	.grid-view h3:before, .grid-view h3:after {
+		background-color: $borderColorRGBA;
+	}
+	.price {
+	}
+	.owl-carousel.product-thumbnails .owl-nav > div:after {
+		color: $lightColor;
+	}
+	.ui-slider {
+		background-color: $lightColor;
+	}
+	.ui-slider .ui-slider-handle {
+		background-color: $mainColor;
+	}
+	#sort_view {
+		border-color: $borderColorRGBA;
+		color: $lightColor;
+	}
+	#toggle_shop_view.grid-view:after, #toggle_shop_view:before {
+		background-color: darken($darkBackgroundColor, 3%);
+	}
+	.widget_layered_nav .color-filters a:before {
+		border-color: $borderColorRGBA;
+	}
+
+	//pagination
+	.pagination > li > a,
+	.pagination > li > span {
+		color: $fontColorLight;
+		background-color: transparent;
+		border: 1px solid $borderColorRGBA;
+	}
+	.pagination>li.active>a,
+	.pagination>li.active>span,
+	.pagination>li>a:hover,
+	.pagination>li>span:hover,
+	.pagination>li>a:focus,
+	.pagination>li>span:focus
+	{
+		background-color: $mainColor;
+		color: $lightColor;
+	}
+
+
+
+	.thumbnail {
+		background-color: transparent;
+		h3 a {
+			color: $lightColor;
+		}
+	}
+	.thumbnail .caption {
+		border-color: transparent;
+		background-color: darken($darkBackgroundColor, 1%);
+	}
+	.progress {
+		background-color: $borderColorRGBA;
+	}
+	.panel-group .panel-heading + .panel-collapse .panel-body {
+		border-color: $borderColorRGBA;
+	}
+  
+	.vertical-tabs .nav > li > a {
+		background-color: $darkBackgroundColor;
+	}
+	.vertical-tabs .nav > li.active > a,
+	.vertical-tabs .nav > li> a:hover {
+		background-color: $mainColor;
+	}
+
+	.entry-meta .comments-link a {
+		color: $lightColor;
+	}
+
+   
+	#timetable tbody th, 
+	#timetable tbody td {
+		border-color: $borderColorRGBA;
+	}
+
+	/* for wordpress - unyson calendar */
+	div .fw-shortcode-calendar-wrapper .page-header h3,
+	div .btn-group button[data-calendar-nav],
+	div .btn-group button[data-calendar-nav*='today'] {
+		color: $lightColor;
+	}
+
+	&.page_footer {
+		color: $fontColorLight;
+		background-color: $darkColor;
+		&.light{
+			background-color: $darkgreyColor;
+		}
+	}
+}

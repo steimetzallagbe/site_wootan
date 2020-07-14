@@ -1,0 +1,150 @@
+/* Mobile menu toggler */
+@media(max-width: 991px) {
+	.toggle_menu {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -30px;
+		margin-top: -30px;
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+		z-index: 1001;
+		visibility: visible;
+
+		.affix.affix_toggler_right & {
+			right: 0;
+			left: auto;
+		}
+
+		.toggler_right & {
+			right: 0;
+			left: auto;
+		}
+
+		.toggler_left & {
+			right: auto;
+			left: 0;
+			margin-left: 0;
+		}
+
+		.toggler_xs_right & {
+			@media (max-width: 767px) {
+				right: 0;
+				left: auto;
+			}
+		}
+
+		.toggler_xxs_right & {
+			@media (max-width: 499px) {
+				right: 0;
+				left: auto;
+			}
+		}
+
+		.ls &,
+		.header_white & {
+			span,
+			span:before,
+			span:after {
+				background-color: $darkgreyColor;
+			}
+		}
+
+		.intro_section + .page_header_wrapper & {
+			span,
+			span:before,
+			span:after {
+				background-color: $lightColor;
+			}
+		}
+
+		.intro_section + .page_header_wrapper .affix & {
+			span,
+			span:before,
+			span:after {
+				background-color: $darkgreyColor;
+			}
+
+			&.mobile-active {
+				span,
+				span:before,
+				span:after {
+					background-color: $lightColor;
+				}
+			}
+		}
+
+		.page_toplogo & {
+			position: fixed;
+			top: 0;
+			left: auto;
+			right: 0;
+			margin: 0;
+		}
+		&:hover span:before {
+			top: -9px;
+		}
+		&:hover span:after {
+			top: 9px;
+		}
+
+		span,
+		span:before,
+		span:after {
+			display: block;
+			width: 30px;
+			position: absolute;
+			background-color: $lightColor;
+			content: '';
+			left:0;
+			transform: rotate(0deg);
+			transition: .25s ease-in-out;
+			height: 2px;
+		}
+		&:before,
+		span {
+			left: 15px;
+			top: 50%;
+		}
+		span:before {
+			opacity: 1;
+			top: -8px;
+		}
+		span:after {
+			opacity: 1;
+			top: 8px;
+		}
+
+		//mobile active
+		&.mobile-active {
+			background-color: $darkgreyColor;
+			border: none;
+			left: auto;
+			top: 0;
+			right: 0;
+			position: fixed;
+			margin: 0;
+			z-index: 3000;
+			&:before {
+				background-color:$lightColor;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg)
+			}
+
+			span {
+				background-color:$lightColor;
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg)
+			}
+			span:before,
+			span:after {
+				opacity: 0;
+			}
+		}
+	}
+}

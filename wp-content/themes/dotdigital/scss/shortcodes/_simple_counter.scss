@@ -1,0 +1,60 @@
+/* Simple Counter Shortcode */
+.shortcode-simple-counter {
+  position: relative;
+  &.text-center{
+    .counter_wrap{
+      text-align: center;
+    }
+  }
+  .counter_wrap {
+    text-align: left;
+    display: inline-block;
+    width: 49%;
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+    }
+    margin-bottom: 40px;
+    .counter_icon {
+      display: block;
+      width: auto;
+      height: 64px;
+      position: relative;
+      img {
+        height: 64px;
+      }
+    }
+    .counter-size {
+      color: $fontColor2;
+      font-size: 48px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 0;
+      line-height: 1;
+      margin-top: 16px;
+    }
+    .counter-text {
+      color: $fontColor;
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+  }
+  &.columns-md-4 {
+    .counter_wrap {
+      text-align: center;
+      padding: 0 15px;
+      width: 49%;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+      @media (min-width: 992px) {
+        width: 24.5%;
+      }
+    }
+  }
+}

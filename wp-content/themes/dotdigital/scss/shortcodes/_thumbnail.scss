@@ -1,0 +1,33 @@
+/*thumbnail*/
+.thumbnail  {
+	position: relative;
+	text-align: center;
+	border-radius: 0;
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	background-color: $lightColor;
+	.isotope-item & {
+		margin-bottom: 30px;
+	}
+	img {
+
+	}
+	h3 {
+		font-size: 20px;
+		margin-bottom: 2px;
+		a {
+			color: inherit;
+		}
+		& + p {
+			color: $mainColor;
+			margin-bottom: 10px;
+		}
+	}
+	.caption {
+		color: $fontColor;
+		background-color: $lightColor;
+		padding: 16px 20px 26px;
+	
+	}
+}

@@ -1,0 +1,22 @@
+/* info box */
+.info-box {
+  .box-icon {
+    margin-top: 25px;
+    color: $mainColor;
+    font-size: 60px;
+  }
+  .box-title {
+    margin-top: 28px;
+    margin-bottom: 35px;
+  }
+  .box-features {
+    list-style: none;
+    text-align: center;
+    padding: 0 20px;
+    .feature {
+      padding: 19px 0;
+      border-top: 1px solid $borderColor;
+      line-height: 1.4;
+    }
+  }
+}

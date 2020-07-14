@@ -1,0 +1,253 @@
+/* Services plugin */
+/* category and archive */
+.services-grid {
+  //margin-top: 20px;
+  //margin-bottom: 80px;
+  .service_item {
+    .read-more {
+    }
+  }
+}
+
+.service_item {
+  z-index: 1;
+  position: relative;
+  .service_icon {
+    margin-top: -30px;
+    font-size: 14px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: -30px;
+    left: 50%;
+    color: $lightColor;
+    background-color: $mainColor;
+    position: absolute;
+    z-index: 2;
+    i {
+      line-height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+  .entry-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .info {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .excerpt {
+    height: 90px;
+    overflow: hidden;
+    > * {
+      color: $fontColor;
+      .ds & {
+        color: $fontColorLight;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .read-more {
+    margin-top: 5px;
+  }
+}
+
+/* Service item loop 3 */
+.service_item.loop-3 {
+  box-shadow:  0 0 6px 3px rgba($darkgreyColor,.1);
+  transition: all .3s ease-in-out;
+  @media (min-width: 1200px) {
+    &.vertical-item.content-padding.big-padding .item-content{
+      padding: 70px 40px 60px;
+    }
+  }
+  .item-content {
+    .icon_wrap {
+      a{
+        height: 65px;
+        display: inline-block;
+        img{
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  .entry-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    @media (min-width: 1200px) {
+      margin-top: 55px;
+    }
+  }
+  .excerpt {
+    margin-bottom: 5px;
+  }
+
+  &:hover{
+    box-shadow:  0 0 0 3px rgba($darkgreyColor,.1);
+  }
+}
+
+/* Service item loop 4 */
+.layout-4 {
+  &.services-grid {
+    @media (min-width: 1200px) {
+      .isotope-item:nth-child(even) {
+        .service_item {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+  .service_item {
+    &.vertical-item.content-padding.big-padding .item-content {
+       padding: 50px;
+        @media (min-width: 1200px) {
+          padding: 50px 60px;
+        }
+    }
+    z-index: 1;
+    position: relative;
+    .service_icon {
+      margin-top: -30px;
+      font-size: 14px;
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin-left: -30px;
+      left: 50%;
+      color: $lightColor;
+      background-color: $mainColor;
+      position: absolute;
+      z-index: 2;
+      i {
+        line-height: 60px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    .entry-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 6px;
+      margin-bottom: 23px;
+    }
+    .info {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .excerpt {
+      @media (min-width: 768px) {
+        height: 150px;
+      }
+      overflow: hidden;
+      > * {
+        color: $fontColor;
+        .ds & {
+          color: $fontColorLight;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .read-more {
+      margin-top: 20px;
+    }
+  }
+}
+
+/* single */
+.single-service {
+  .entry-title {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      font-size: 40px;
+  }
+  ul,
+  ul.list1 {
+      margin-bottom: 20px;
+  }
+}
+
+.height-none-excerpt{
+  .shortcode-service{
+    .service_item{
+      .excerpt{
+        height: auto;
+      }
+    }
+  }
+}
+
+/* Shortcode service */
+.shortcode-service {
+  &.small-img {
+    .service_item {
+      img {
+        max-width: 120px;
+      }
+    }
+  }
+  .service_item {
+    img {
+      width: auto;
+      margin: 0 auto;
+    }
+    .excerpt {
+      height: 100px;
+      overflow: hidden;
+    }
+    &.vertical-item.content-padding.loop-2 .item-content {
+      padding: 20px 20px;
+    }
+    &.loop-4{
+      .item-content{
+        padding-top: 0!important;
+      }
+      .excerpt{
+        height: auto;
+      }
+      img{
+        height: 60px;
+      }
+    }
+  }
+  /* Isotope */
+  &.isotope_container {
+    .service_item {
+      margin: 6px 0;
+    }
+    .service_item {
+      .entry-title {
+        text-transform: none;
+      }
+    }
+  }
+  /* Carousel */
+  &.owl-carousel {
+      .owl-stage-outer {
+        overflow: visible !important;
+        .service_item {
+          .entry-title {
+            font-size: 24px;
+            text-transform: none;
+            a {
+              color: $lightColor;
+            }
+          }
+        }
+      }
+  }
+}
