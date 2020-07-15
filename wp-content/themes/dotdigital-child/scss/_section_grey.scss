@@ -1,0 +1,79 @@
+/**grey section - light section, muted section - .ls.ms*/
+.ls.ms {
+	background-color: $backgroundColor;
+
+	.with_background {
+		background-color: $lightColor;
+	}
+
+	.price-table {
+		background-color: $lightColor;
+	}
+
+	.page-links {
+		.small_buttons a,
+		.small_button {
+			span {
+				color: $lightColor;
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+
+	.panel-body {
+		background-color: $lightColor;
+	}
+
+	/* template styles */
+	hr {
+		background-color: $lightColor;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="number"],
+	textarea,
+	select,
+	.form-control {
+		background-color: $lightColor;
+	}
+
+	.ls:not(.ms),
+	.with_background {
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select,
+		.form-control {
+			border-color: $borderColor;
+		}
+	}
+
+	/*accordion*/
+	.panel-title > a:hover {
+		background-color: $mainColor;
+	}
+	.panel-title > a.collapsed:hover {
+		background-color: $mainColor;
+	}
+
+	.pagination a,
+	.pagination span {
+		background-color: $lightColor;
+		border-color: $lightColor;
+	}
+
+	.price-table {
+		background-color: $lightColor;
+	}
+}

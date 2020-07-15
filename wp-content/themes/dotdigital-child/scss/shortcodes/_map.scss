@@ -1,0 +1,100 @@
+/* map shortcode */
+.wrap-map {
+  position: relative;
+  .fw-map-overlay {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($darkgreyColor, 0.8);
+    .fw-map-info-box {
+      background-color: $lightColor;
+      width: 430px;
+      min-height: 250px;
+      margin: 0;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      padding: 50px;
+      @media (max-width: 480px) {
+        width: 280px;
+        padding: 50px 15px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .close-box {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        i {
+          color: $fontColor2;
+          -webkit-transition: all 0.2s ease-in-out 0s;
+          -moz-transition: all 0.2s ease-in-out 0s;
+          -o-transition: all 0.2s ease-in-out 0s;
+          -ms-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
+        }
+        &:hover i {
+          color: $mainColor;
+        }
+      }
+      .content {
+        line-height: 2.2;
+        i {
+          color: $mainColor;
+          margin-right: 5px;
+        }
+        a {
+          color: $fontColor2;
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+//styling google info window
+.gm-style .gm-style-iw {
+  overflow: visible !important;
+  text-align: center;
+  line-height: 1.6em;
+
+  & > *:first-child {
+    position: relative;
+  }
+  i {
+    color: $mainColor;
+    margin-right: 0;
+  }
+  a {
+    color: $fontColor2 !important;
+    &:hover {
+      color: $mainColor !important;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 2px solid $mainColor;
+    top: -25px;
+    left: -16px;
+    right: -16px;
+    bottom: -25px;
+    background: $lightColor;
+    box-shadow: none;
+  }
+}

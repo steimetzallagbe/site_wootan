@@ -1,0 +1,17 @@
+.widget_rss {
+	li {
+		margin-bottom: 15px;
+		.rsswidget {
+			font-size: 1.1em;
+		}
+	}
+	.rss-date {
+		display: block;
+		font-weight: 700;
+	}
+	cite {
+		display: block;
+		text-align: right;
+		font-weight: 700;
+	}
+}

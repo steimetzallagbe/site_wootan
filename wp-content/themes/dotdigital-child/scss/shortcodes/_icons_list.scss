@@ -1,0 +1,50 @@
+/* icons list */
+.icons-list {
+  .small-teaser {
+    line-height: 21px;
+  }
+  a {
+    cursor: pointer;
+    .ls & {
+      color: $darkgreyColor;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+  ul {
+    margin: 5px 0;
+    li {
+      border: 0;
+      position: relative;
+      padding: 7px 0 7px 0;
+      line-height: 1;
+      &:first-child {
+        padding: 0 0 7px 0;
+      }
+      .media-left {
+        padding-right: 10px;
+        vertical-align: middle;
+        i {
+          display: inline-block;
+          width: 16px;
+          font-size: 14px;
+          text-align: center;
+          vertical-align: middle;
+          color: $mainColor;
+        }
+      }
+      .media-body {
+        vertical-align: middle;
+        width: auto;
+      }
+    }
+  }
+}
+.ds {
+  .icons-list {
+    .media-body {
+      color: $fontColorLight;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+/**light section - .ls*/
+.light-body {
+	background-color: $lightColor;
+}
+.ls {
+	background-color: $lightColor;
+	color:$fontColor;
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6 {
+		color: $fontColor2;
+		a {
+			color: inherit;
+			&:hover {
+				color: $mainColor;
+			}
+		}
+		&.grey {
+			color: $fontColor;
+		}
+	}
+
+	a {
+		color: $mainColor;
+		&:hover {
+			color: $darkgreyColor;
+		}
+	}
+
+	a.logo {
+	   color: $darkColor;
+	}
+	.text-block.shortcode p {
+		strong {
+			color: $darkColor;
+		}
+	}
+
+	.theme_buttons.color a,
+	.theme_button.color {
+		&:hover, &:focus, &:active {
+			color: $darkgreyColor !important;
+		}
+	}
+
+	.theme_buttons.inverse a,
+	.theme_button.inverse {
+		color: $darkgreyColor;
+	}
+
+	.with_background,
+	.tab-content {
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="number"],
+		textarea,
+		select,
+		.form-control,
+		.select-group {
+			background-color: $lightColor;
+		}
+	}
+
+	.toggle_menu span,
+	.toggle_menu span:before,
+	.toggle_menu span:after {
+		background-color: $darkColor;
+	}
+
+	.color-icon.bg-icon {
+		background-color: #f8f8f8;
+	}
+	.with_background .color-icon.bg-icon {
+		background-color: $lightColor;
+	}
+
+	.grey,
+	.grey li {
+		color: $darkgreyColor;
+	}
+
+	.highlight {
+		color: $mainColor;
+	}
+
+	.greylinks a {
+		color: $fontColor;
+		&:hover {
+			color: $mainColor;
+		}
+	}
+
+	.greylinks a.social-icon {
+		color: $fontColor;
+	}
+
+	.darklinks a {
+		color: $darkgreyColor;
+		&:hover {
+			color: $mainColor;
+		}
+	}
+
+	.darklinks2 a {
+		color: $darkgreyColor;
+		&:hover {
+			color: $mainColor2;
+		}
+	}
+
+	.categories-links.color1 a,
+	.categories-links.color2 a,
+	.categories-links.color3 a {
+		&:hover {
+			color: $darkgreyColor;
+		}
+	}
+
+	.pagination>li>a,
+	.pagination>li>span {
+		color: $darkgreyColor;
+	}
+	.with_background {
+		.with_background {
+			background-color: $lightColor;
+		}
+		blockquote {
+			color: $darkgreyColor;
+		}
+	}
+	
+
+	.widget_craftpro_twitter {
+		.tweet_time {
+			color: $mainColor;
+		}
+	}
+	.price-table {
+		background-color: $greyColor;
+	}
+}

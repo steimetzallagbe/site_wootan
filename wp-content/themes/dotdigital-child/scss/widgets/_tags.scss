@@ -1,0 +1,53 @@
+/*widget_tag_cloud*/
+.ds .widget_tag_cloud.special{
+	background-color: $darkColor;
+}
+.widget_tag_cloud {
+	&.special {
+		background-color: $backgroundColor;
+		padding: 20px;
+		@media(min-width:768px){
+			padding: 35px 40px 40px 40px;
+		}
+		.widget-title {
+			margin-top: 0;
+		}
+		a {
+			background-color: $lightColor;
+			font-weight: bold;
+		}
+	}
+	.tagcloud {
+		margin-top: -12px;
+		margin-bottom: -12px;
+	}
+	a {
+		background-color: $backgroundColor;
+		border: 0;
+		border-radius: 40px;
+		color: $darkColor;
+		padding: 6px 20px 6px;
+		margin: 0 4px 10px 0;
+		font-size: 12px !important;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		text-indent: 0.2em;
+		text-align: left;
+		font-weight: bold;
+		display: inline-block;
+	}
+}
+
+.widget_tag_cloud a:hover {
+	background-color: $mainColor;
+	border-color: $mainColor;
+	color: $lightColor;
+}
+
+.ds {
+	.widget_tag_cloud a:hover {
+		background-color: $mainColor;
+		border-color: $mainColor;
+		color: $lightColor;
+	}
+}

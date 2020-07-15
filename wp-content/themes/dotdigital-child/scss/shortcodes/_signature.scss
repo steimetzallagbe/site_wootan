@@ -1,0 +1,47 @@
+/* Signature */
+.fw-theme-signature {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .fw-signature-left-part {
+    .section_header {
+      text-transform: none;
+      margin-bottom: 0;
+    }
+  }
+  .fw-signature-right-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.fw-theme-signature.style2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    .fw-signature-left-part {
+      margin-right: 30px;
+      .section_header {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .subtitle {
+        text-transform: none;
+        font-weight: 300;
+        font-size: 16px;
+        color: $fontColor !important;
+        letter-spacing: 0;
+        margin-top: 10px;
+      }
+    }
+}
+
+.ds{
+  .fw-theme-signature.style2{
+    .subtitle{
+      color: $lightColor !important;
+    }
+  }
+}

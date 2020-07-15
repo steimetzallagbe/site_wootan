@@ -1,0 +1,161 @@
+/*
+**main menu mobile styles
+*/
+@media(max-width: 991px) {
+	.page_header {
+		.mobile-active {
+
+		}
+	}
+	.mainmenu_wrapper{
+		/*position: relative;*/
+		position: fixed;
+		visibility: hidden;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: transparent;
+		opacity: 0;
+
+		-webkit-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+	}
+
+	.mobile-active .mainmenu_wrapper {
+		visibility: visible;
+		opacity: 1;
+		background-color: #111;
+	}
+
+	.toggle_menu {
+		display: block;
+		cursor: pointer;
+
+		&.sticked{
+		}
+		&.mobile-active {
+			background-color: #111;
+			border: none;
+			left: 0;
+			top: 0;
+			right: 0;
+			position: fixed;
+			margin: 0;
+			width: auto;
+			height: 50px;
+			z-index: 3000;
+			&:after {
+				position: absolute;
+				top: 14px;
+				right: 5px;
+				font-family: 'rt-icons-2';
+				content: "\e117";
+				font-size: 40px;
+				color: $lightColor;
+			}
+			span {display: none;}
+		}
+	}
+
+	.nav-justified>li>a {
+		text-align: left;
+	}
+	.sf-menu {
+		position: fixed;
+		overflow: auto;
+		background-color: $darkgreyColor;
+		padding: 60px 0 20px 10px;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 100%;
+		font-size: 1.1em;
+		text-transform: uppercase;
+		font-weight: 400;
+		word-wrap: break-word;
+		text-align: left;
+
+		-webkit-transition: all 0.25s ease-out 0s;
+		-moz-transition: all 0.25s ease-out 0s;
+		-o-transition: all 0.25s ease-out 0s;
+		-ms-transition: all 0.25s ease-out 0s;
+		transition: all 0.25s ease-out 0s;
+		opacity: 0;
+		.mobile-active & {
+			opacity: 1;
+			right: 15px;
+		}
+	}
+	.sf-menu > li > a,
+	.sf-menu a {
+		color: $lightColor;
+		z-index: 2;
+	}
+	.sf-menu ul {
+		list-style: none;
+		padding-left: 10px;
+		//for smoother show and hide animation
+		opacity: 1 !important;
+		margin-top: 0 !important;
+	}
+	.sf-menu ul li a{
+		display: block;
+		padding: 10px;
+		font-weight: 300;
+		font-size: 16px;
+		text-transform: none;
+	}
+	.sf-menu ul li a:before {
+		content: '-';
+		padding-right: 5px;
+	}
+	.sf-menu ul ul li a:before {
+		content: '--';
+		padding-right: 5px;
+	}
+
+	/*** arrows (for all except IE7) **/
+	.sf-arrows .sf-with-ul {
+		padding-right: 3em;
+		*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+	}
+
+	.sf-arrows .sfHover > .sf-with-ul {
+		margin-right: 3em;
+	}
+
+	/* styling for both css and generated arrows */
+	.sf-arrows .sf-with-ul + .sf-menu-item-mobile-toggler {
+		position: absolute;
+		right: 5px;
+		top: 7px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		background-color: #111;
+		text-align: center;
+		font-size: 20px;
+		z-index: 1;
+		&:after {
+			font-family: 'FontAwesome';
+			content: '\f105';
+			position: relative;
+			top: -1px;
+		}
+	}
+	/*top menu level*/
+	.sf-arrows .sfHover > a,
+	.sf-arrows .sfHover > a:hover {
+		color: $lightColor;
+	}
+
+	.sfHover > .sf-with-ul + .sf-menu-item-mobile-toggler:after {
+		content: '\f107';
+	}
+}

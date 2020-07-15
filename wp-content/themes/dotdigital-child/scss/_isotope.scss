@@ -1,0 +1,95 @@
+/*
+isotope portfolio and gallery pos
+*/
+.gallery-item  {
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.gallery-columns-1 .gallery-item {
+	width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.11%;
+}
+
+.gallery-icon img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.gallery-caption {
+	display: block;
+	padding: 0.5em;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.gallery-columns-4 .gallery-item,
+	.gallery-columns-5 .gallery-item,
+	.gallery-columns-6 .gallery-item,
+	.gallery-columns-7 .gallery-item,
+	.gallery-columns-8 .gallery-item,
+	.gallery-columns-9 .gallery-item {
+		width: 33%;
+	}
+	.gallery-columns-4 .gallery-caption,
+	.gallery-columns-5 .gallery-caption,
+	.gallery-columns-6 .gallery-caption,
+	.gallery-columns-7 .gallery-caption,
+	.gallery-columns-8 .gallery-caption,
+	.gallery-columns-9 .gallery-caption {
+		display: none;
+	}
+}
+
+.blog .format-status .entry-title,
+.archive .format-status .entry-title {
+}
+
+.isotope_container {
+	-webkit-transition: height 0.2s ease-in-out 0s;
+	-moz-transition: height 0.2s ease-in-out 0s;
+	-o-transition: height 0.2s ease-in-out 0s;
+	-ms-transition: height 0.2s ease-in-out 0s;
+	transition: height 0.2s ease-in-out 0s;
+	.single-post & {
+		margin: 20px 0;
+		clear: both;
+	}
+}

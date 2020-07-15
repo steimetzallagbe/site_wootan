@@ -1,0 +1,20 @@
+/* datetimepicker */
+.bootstrap-datetimepicker-widget {
+	td.active,
+	td.active:hover {
+		background-color: $mainColor !important;
+		color: $lightColor !important;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+	}
+	.timepicker {
+		.btn-primary {
+			color: $lightColor;
+			background-color: $mainColor;
+			border-color: $mainColor;
+			border-radius: 5px;
+		}
+	}
+	a {
+		color: $mainColor;
+	}
+}

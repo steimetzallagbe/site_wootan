@@ -1,0 +1,60 @@
+/* shortcode-image-carousel */
+.shortcode-image-carousel {
+	&.owl-theme .owl-nav,
+	&.owl-theme:hover .owl-nav {
+		top: 50%;
+		opacity: 1;
+	}
+	&.owl-carousel {
+		.owl-nav {
+			> div {
+				margin-top: -25px;
+				background-color: transparent;
+				&:after {
+					color: $fontColor;
+					font-size: 28px;
+				}
+			}
+			> div:hover {
+				&:after {
+					color: $lightColor;
+				}
+			}
+			> div.owl-prev {
+				left: -50px;
+			}
+			> div.owl-next {
+				right: -50px;
+			}
+		}
+	}
+	&.owl-carousel .owl-item {
+		cursor: pointer;
+		> * {
+			text-align: center;
+		}
+		img {
+			width: auto;
+			margin: 0 auto;
+			-webkit-transition: all 0.5s ease 0s;
+			transition: all 0.5s ease 0s;
+			opacity: 0.2;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&.center {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+	&.opacity-none .owl-item{
+		img{
+			opacity: 1;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+/* widget socials */
+.widget_socials {
+    a.social-icon {
+      margin-left: 10px !important;
+      &:first-of-type {
+        margin-left: 0 !important;
+      }
+      &:before {
+        top: 1px;
+        position: relative;
+      }
+    }
+}
+
+/* widget socials 2 */
+.widget_socials_2 {
+  ul.social-list {
+    li.list-item {
+      padding-bottom: 5px;
+      margin-bottom: 2px;
+      position: relative;
+      overflow: hidden;
+      &:after {
+        content:"";
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        width: 100%;
+        background: rgba($lightColor, 0.1);
+        display: block;
+        left:57px
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      a.icon-title {
+        color: $fontColor;
+        padding-left: 15px;
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}

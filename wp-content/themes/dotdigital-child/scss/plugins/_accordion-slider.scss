@@ -1,0 +1,64 @@
+/* Accordion slider */
+.wpos-tab-slider {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+.container-fluid .col-xs-12.col-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+.wpos-tab-slider .as-layer.as-padding{
+  width: 100%;
+  position: absolute;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: $mainColor;
+  color: $lightColor;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  padding: 15px 20px;
+  opacity: 0!important;
+  text-align: center;
+
+}
+.wpos-tab-slider.as-horizontal .as-wposslide:hover .as-layer.as-padding,
+.wpos-tab-slider.as-horizontal .as-wposslide.as-opened .as-layer.as-padding{
+  opacity: 1!important;
+  visibility: visible!important;
+}
+.wpos-tab-slider .as-pagination-button{
+  border-color: $lightColor;
+}
+.wpos-tab-slider .as-pagination-buttons .as-selected {
+  background-color:$lightColor;
+}
+
+/* custom classes */
+p.inline-section{
+  display: inline-block;
+}
+
+
+@media (max-width: 1440px)  {
+  .wpos-tab-slider .as-layer.as-padding{
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px)  {
+  .wpos-tab-slider .as-layer.as-padding{
+    font-size: 18px;
+  }
+  .card .card-body {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1024px)  {
+  .wpos-tab-slider .as-layer.as-padding{
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+}

@@ -1,0 +1,47 @@
+/*
+* Icon box 2 shortcode
+*/
+
+.icon-box-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  @media (min-width: 400px) {
+    &.with_padding {
+      padding: 60px;
+    }
+  }
+  .box_icon {
+    img {
+      max-height: 50px;
+    }
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: $mainColor;
+  }
+  .box_icon + .box-wrap{
+    margin-top: 15px;
+  }
+  .box-heading{
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 22px;
+    .cs & {
+      color: $lightColor;
+    }
+  }
+  .box-content {
+    margin-bottom: 30px;
+    .ds & {
+      color: $fontColor;
+    }
+    .cs & {
+      color: $lightColor;
+    }
+  }
+  .box-btn {
+    margin-bottom: 20px;
+  }
+}

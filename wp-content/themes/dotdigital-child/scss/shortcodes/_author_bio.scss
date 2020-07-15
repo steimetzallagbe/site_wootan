@@ -1,0 +1,164 @@
+/* Author Bio Shortcode */
+.author-bio-shortcode {
+  .author_bio_shortcode_wrap {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    .owl-carousel.owl-loaded {
+      margin-bottom: 0;
+    }
+    .custom-nav {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      z-index: 4;
+      > div {
+        font-size: 0;
+        color: $mainColor;
+        .ds & {
+          color: $lightColor;
+        }
+        position: absolute;
+        width: 40px;
+        opacity: 0.3;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+        &:hover {
+          opacity: 1;
+        }
+        &:before {
+          content: "";
+          font-size: 30px;
+          font-weight: 300;
+          font-family: FontAwesome;
+        }
+        &.owl-prev {
+          left: -50px;
+          &:before {
+            content: "\f104";
+          }
+        }
+        &.owl-next {
+          left: auto;
+          right: -50px;
+          &:before {
+            content: "\f105";
+          }
+        }
+      }
+    }
+  }
+  text-align: center;
+  .bio-text {
+    color: $fontColor;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 200;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .author-bio-word {
+    position: absolute;
+    //width: 100%;
+    top: -50%;
+    font-size: 240px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $mainColor;
+    text-align: left;
+    opacity: 0.05;
+    @media (max-width: 1500px) {
+      font-size: 180px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 100px;
+    }
+    @media (max-width: 767px) {
+      font-size: 60px;
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  .owl-carousel-slider {
+    transition: left 0.5s ease;
+    position: relative;
+    margin-top: 60px;
+    transform: translateX(50%);
+    height: 4px;
+    background-color: rgba($backgroundColor, 0.1);
+  }
+
+  .ui-slider-handle{
+    outline: none;
+    background: transparent !important;
+  }
+  .ui-slider-range {
+    height: 4px;
+    transition: width 0.5s ease;
+    background-color: $backgroundColor;
+    position: absolute;
+    top:0;
+  }
+
+  .author-bio-flex {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    //dots
+    &:first-child {
+      margin-left: -15px;
+      margin-right: -15px;
+      span {
+        transition: background-color 0.5s ease;
+        margin-top: -8px;
+        position: relative;
+        cursor: pointer;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba($backgroundColor, 0.1);
+        z-index: 2;
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 10px;
+          z-index: 3;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          border: 0;
+          border-radius: 50%;
+          background: $mainColor;
+        }
+      }
+      //years
+      & + div {
+        margin-left: -1em;
+        margin-right: -1em;
+        position: relative;
+        top: -60px;
+      }
+    }
+
+    .year-label {
+      transition: color 0.5s ease;
+      color: $fontColor;
+      .ds & {
+        color: $lightColor;
+      }
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+    }
+  }
+}

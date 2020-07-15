@@ -1,0 +1,2 @@
+2020-07-15T20:37:25+00:00 CRITICAL Cannot redeclare compiler() (previously declared in D:\projet\kwaabo\www\wootan\wp-content\plugins\wp-scss\class\class-wp-scss.php:61) in D:\projet\kwaabo\www\wootan\wp-content\plugins\wp-scss\class\class-wp-scss.php on line 61
+

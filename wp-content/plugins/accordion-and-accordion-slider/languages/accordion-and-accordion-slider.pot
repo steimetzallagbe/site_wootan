@@ -1,0 +1,432 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Accordion and Accordion Slider\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-14 05:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.3.4"
+
+#. Name of the plugin
+msgid "Accordion and Accordion Slider"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Accordion and Accordion Slider (Horizontal and Vertical) - Responsive and "
+"Touch enabled accordion for WordPress Website. Also work with Gutenberg "
+"shortcode block."
+msgstr ""
+
+#: includes/admin/settings/premium.php:15
+msgid "Accordion and Accordion Slider - Features"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:97
+msgid "Accordion Parameter"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:21 includes/wp-aas-post-types.php:22
+#: includes/wp-aas-post-types.php:31
+msgid "Accordion slider"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:196
+msgid "Accordion Slider Shortcode."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:23
+msgid "Add Accordion slider"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:27
+msgid "Add Images to Gallery"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:24
+msgid "Add New Accordion slider"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:27
+msgid "Add to Gallery"
+msgstr ""
+
+#: includes/admin/settings/wp-aas-img-popup-data.php:41
+msgid "Alternative Text"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:278
+msgid "Attachment Found."
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:126
+msgid "Autoplay"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:205
+msgid "Check plugin demo for designs."
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:24
+msgid "Choose Gallery Images"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:52
+msgid ""
+"Choose your desired images for gallery. Hold Ctrl key to select multiple "
+"images at a time."
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:33
+msgid "Choose your Settings for Accordion"
+msgstr ""
+
+#: includes/admin/settings/wp-aas-img-popup.php:17
+msgid "Close (Esc)"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:67
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:66
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:91
+msgid "Distance between accordion. eg 10"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:206
+msgid "Domo Link"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:25
+msgid "Edit Accordion slider"
+msgstr ""
+
+#: includes/class-wp-aas-script.php:106
+#: includes/admin/metabox/wp-aas-sett-metabox.php:40
+#: includes/admin/settings/wp-aas-img-popup-data.php:19
+msgid "Edit Image"
+msgstr ""
+
+#: includes/class-wp-aas-script.php:105
+#: includes/admin/metabox/wp-aas-sett-metabox.php:39
+msgid "Edit Image in Popup"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:131
+msgid "Enable autoplay or not"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:141
+msgid "Enable mouse wheel or not"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:121
+msgid "Enable shadow or not"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:52
+msgid "Enter height eg. 300"
+msgstr ""
+
+#: includes/admin/settings/wp-aas-img-popup-data.php:44
+msgid "Enter image alternative text."
+msgstr ""
+
+#: includes/admin/settings/wp-aas-img-popup-data.php:52
+msgid "Enter image link. e.g http://wponlinesupport.com"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:100
+msgid "Enter opened accordion size eg. 80%"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:61
+msgid ""
+"Enter the image size. You can use following size: thumbnail, medium, "
+"medium_large, large and full"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:70
+msgid "Enter Visible Accordion Panels at a time. eg. 5"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:42
+msgid "Enter width eg. 900"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:27
+msgid "Gallery Images"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:166
+msgid "Geeting Started with Accordion Slider"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:234
+msgid "Go Premium "
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:48
+msgid "Height"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:246
+msgid "Help to improve this plugin!"
+msgstr ""
+
+#: includes/admin/settings/hire-us.php:18
+msgid "Highlight of Hiring:"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:61
+msgid "Hire Us"
+msgstr ""
+
+#: includes/admin/settings/hire-us.php:15
+msgid "Hire Us - Get unlimited expert WordPress Support and Development"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:22
+#: includes/admin/wp-aas-how-it-work.php:118
+msgid "How It Works"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:158
+msgid "How It Works - Display and shortcode"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:22
+msgid "How it works, our plugins and offers"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:181
+msgid "How Shortcode Works"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.wponlinesupport.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://www.wponlinesupport.com/plugins/"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:75
+msgid "Image Gallery draft updated."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:70
+msgid "Image Gallery published."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:69
+#, php-format
+msgid "Image Gallery restored to revision from %s"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:71
+msgid "Image Gallery saved."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:73
+#, php-format
+msgid "Image Gallery scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:72
+msgid "Image Gallery submitted."
+msgstr ""
+
+#: includes/wp-aas-post-types.php:65 includes/wp-aas-post-types.php:68
+msgid "Image Gallery updated."
+msgstr ""
+
+#: includes/admin/settings/wp-aas-img-popup-data.php:49
+msgid "Image Link"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:57
+msgid "Image Size"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:74
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:96
+msgid "Max Opened Accordion Size"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:136
+msgid "Mouse Wheel"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:202
+msgid "Need Support?"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:26
+msgid "New Accordion slider"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:29
+msgid "No Accordion slider"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:30
+msgid "No Accordion slider found in Trash"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:49
+msgid "No Gallery Images"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:187
+msgid "Number of Photos"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:106
+msgid "Open Accordion Panel On"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:76
+msgid "Orientation"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:121
+msgid "Our Plugins"
+msgstr ""
+
+#: includes/admin/settings/wp-aas-img-popup.php:22
+msgid "Please Wait"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-sett-metabox.php:28
+msgid "Remove Gallery Images"
+msgstr ""
+
+#: includes/class-wp-aas-script.php:107
+#: includes/admin/metabox/wp-aas-sett-metabox.php:41
+msgid "Remove Image"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:28
+msgid "Search Accordion slider"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:111
+msgid "Select accordion panel open option"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:81
+msgid "Select orientation for accordion"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:95
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:116
+msgid "Shadow"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:186
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:193
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:261
+#: includes/admin/class-wp-aas-admin.php:298
+msgid "Sorry, Something happened wrong."
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:87
+msgid "Space Between Accordion"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:185
+msgid ""
+"Step-1. Create a page like accordion slider OR add the shortcode in any page."
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:170
+msgid "Step-1. Go to \"Accordion Slider --> Add New\"."
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:171
+msgid "Step-2. Enter Accordion Slider Title."
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:172
+msgid ""
+"Step-3. Under \"Choose Gallery Images\" click on \"Gallery Images\" button "
+"and select multiple images from WordPress media and click on \"Add to "
+"Gallery\" button.."
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:173
+msgid "Step-4. You can use accordion slider parameters as per your need."
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:174
+msgid ""
+"Step-5. You can find out shortcode for accordion slider under \"Accordion "
+"Slider\" list view."
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:103
+msgid ""
+"There was an error retrieving the data from the server. Please try again "
+"later."
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:58
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:58
+msgid "Upgrade to PRO - Accordion and Accordion Slider"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:224
+msgid "Upgrate to Pro"
+msgstr ""
+
+#: includes/wp-aas-post-types.php:27
+msgid "View Accordion slider"
+msgstr ""
+
+#: includes/admin/wp-aas-how-it-work.php:235
+msgid "View PRO Demo "
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:66
+msgid "Visible Accordion Panels"
+msgstr ""
+
+#: includes/admin/metabox/wp-aas-slider-parameter.php:38
+msgid "Width"
+msgstr ""
+
+#. Author of the plugin
+msgid "WP OnlineSupport"
+msgstr ""
+
+#: includes/admin/class-wp-aas-admin.php:322
+msgid "Your changes saved successfully."
+msgstr ""

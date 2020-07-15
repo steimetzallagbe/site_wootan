@@ -1,0 +1,82 @@
+/* Simple list */
+.simple-list {
+  .no-bullets {
+    padding-left: 0;
+  }
+  .list-title {
+    padding-bottom: 13px;
+    margin-bottom: 10px;
+  }
+  .list-item {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.text-center {
+    li.list-item {
+      display: flex;
+      justify-content: center !important;
+    }
+  }
+  &.list-1 {
+    li.list-item {
+      position: relative;
+      width: auto;
+      display: block;
+      padding: 9px 0;
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      a {
+        position: relative;
+        width: auto;
+        color: $fontColor;
+        &:hover {
+          color: $mainColor;
+        }
+        &:before{
+          font-family: 'FontAwesome';
+          font-size: 5px;
+          content: "\f111";
+          position: absolute;
+          left: -15px;
+          top: 50%;
+          display: block;
+          transform: translateY(-50%);
+          color: $mainColor;
+        }
+      }
+    }
+  }
+  &.list-2 {
+    li.list-item {
+      position: relative;
+      width: auto;
+      display: block;
+      padding: 5px 0 5px 20px;
+      border: 0 !important;
+      color: $lightColor;
+      .with_background  & {
+        color: $fontColor2;
+      }
+      &:before {
+        font-family: 'FontAwesome';
+        font-size: 5px;
+        content: "\f111";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        display: block;
+        transform: translateY(-50%);
+        color: $mainColor;
+        .cs & {
+          color: $darkColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+/*
+**styled lists
+*/
+ul, ol {
+	padding-left: 30px;
+}
+
+.list1 ol,
+ol.list1 {
+	counter-reset: li;
+	list-style: none outside none;
+	padding: 0;
+	margin-bottom: 0;
+	li {
+		position: relative;
+		padding: 4px 0 4px 30px;
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 300;
+		color: $fontColor2;
+		&:after {
+			content: counter(li, decimal-leading-zero)".";
+			counter-increment: li;
+			position: absolute;
+			left: 2px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			font-weight: 500;
+			color: $mainColor;
+		}
+		.ds & {
+			color: $fontColor;
+		}
+	}
+}
+
+.list1 ul,
+ul.list1 {
+	list-style:none;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	li{
+		position: relative;
+		padding: 5px 0 5px 5px;
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 300;
+
+		color: $fontColor2;
+		.ds & {
+			color: $fontColor;
+		}
+		&:before{
+			font-family: 'FontAwesome';
+			font-size: 5px;
+			content: "\f111";
+			position: absolute;
+			left: -10px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			color: $mainColor;
+		}
+	}
+}

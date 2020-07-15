@@ -1,0 +1,364 @@
+/*
+prettyPhoto
+*/
+div.facebook {
+	.pp_description{
+		margin:0 37px 0 0
+	}
+}
+div.pp_pic_holder a:focus{
+	outline:none
+}
+
+div.pp_overlay{
+	background:#000;
+	display:none;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:9500
+}
+
+div.pp_pic_holder{
+	display:none;
+	position:absolute;
+	width:100px;
+	z-index:10000
+}
+
+.pp_content{
+	height:40px;
+	min-width:40px;
+	overflow: hidden;
+
+}
+
+* html .pp_content{
+	width:40px
+}
+
+.pp_content_container{
+	position:relative;
+	text-align:left;
+	width:100%
+}
+
+.pp_content_container .pp_left{
+	padding-left:20px
+}
+
+.pp_content_container .pp_right{
+	padding-right:20px
+}
+
+.pp_content_container .pp_details{
+	float:left;
+	padding:8px 10px;
+	line-height: 1;
+	background-color: $lightColor;
+
+}
+
+.pp_description{
+	display:none;
+	margin:0
+}
+
+.pp_social{
+	float:left;
+	margin:0 0 0 30px;
+}
+
+.pp_social .facebook{
+	float:left;
+	margin-left:5px;
+	width:auto;
+	overflow:hidden
+}
+
+.pp_social .twitter{
+	float:left
+}
+
+.pp_nav p{
+	float:left;
+	white-space:nowrap;
+	margin:4px 6px;
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.pp_nav .pp_play,
+.pp_nav .pp_pause,
+a.pp_arrow_previous,
+a.pp_arrow_next{
+	float:left;
+	text-align: center;
+	font-size: 0;
+	color: transparent;
+	&:before {
+		line-height: 20px;
+		display: inline-block;
+		width: 20px;
+		font-family: 'FontAwesome';
+		font-size: 12px;
+		color: $darkgreyColor;
+		opacity: 0.7;
+		content: "\f04b";
+	}
+	&:hover:before {
+		opacity: 1;
+	}
+}
+
+.pp_nav .pp_pause {
+	&:before{
+		content: "\f04c";;
+	}
+}
+
+a.pp_arrow_previous {
+	&:before {
+		content: "\f04a";
+	}
+}
+a.pp_arrow_next{
+	&:before {
+		content: "\f04e";
+	}
+}
+
+a.pp_arrow_previous.disabled,
+a.pp_arrow_next.disabled{
+	visibility: hidden;
+	cursor: default;
+}
+
+.pp_hoverContainer{
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:2000
+}
+
+.pp_gallery{
+	display:none;
+	left:50%;
+	margin-top:-50px;
+	position:absolute;
+	z-index:10000
+}
+
+.pp_gallery div{
+	float:left;
+	overflow:hidden;
+	position:relative
+}
+
+.pp_gallery ul{
+	float:left;
+	height:35px;
+	position:relative;
+	white-space:nowrap;
+	margin:0 0 0 5px;
+	padding:0
+}
+
+.pp_gallery ul a{
+	border:1px rgba(0,0,0,0.1) solid;
+	display:block;
+	float:left;
+	height:33px;
+	overflow:hidden
+}
+
+.pp_gallery ul a:hover,
+.pp_gallery ul .selected a{
+	border-color: $mainColor;
+}
+
+.pp_gallery ul a img{
+	border:0
+}
+
+.pp_gallery li{
+	display:block;
+	float:left;
+	margin:0 5px 0 0;
+	padding:0
+}
+
+.pp_gallery li.default a{
+	background:url(../img/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;
+	display:block;
+	height:33px;
+	width:50px
+}
+
+div.facebook .pp_gallery .pp_arrow_previous, div.facebook .pp_gallery .pp_arrow_next{
+	margin-top:7px
+}
+
+a.pp_next, a.pp_previous{
+	position: relative;
+	display:block;
+	float:right;
+	height:100%;
+	width:49%;
+	font-size: 0;
+	color: transparent;
+	opacity: 0;
+	&:before {
+		line-height: 1;
+		background-color: rgba($darkgreyColor, 0.3);
+		font-size: 18px;
+		padding: 10px 15px 10px 18px;
+		color: $lightColor;
+		font-family: 'FontAwesome';
+		content: "\f105";
+		position: absolute;
+		top: 50%;
+		margin-top: -3px;
+		right: 30px;
+	}
+	&:hover {
+		opacity: 1;
+	}
+}
+
+a.pp_previous{
+	float:left;
+	&:before {
+		content: "\f104";
+		right: auto;
+		padding: 10px 18px 10px 15px;
+		left:30px;
+	}
+}
+
+a.pp_expand,a.pp_contract{
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	right:30px;
+	top:19px;
+	z-index:20000;
+	font-size:0;
+	color: transparent;
+	text-align: center;
+	&:before {
+		font-size: 14px;
+		line-height: 20px;
+		color: $lightColor;
+		font-family: 'FontAwesome';
+		content: "\f0b2";
+		background-color: rgba($darkgreyColor,0.3);
+		padding: 12px 13px;
+	}
+}
+a.pp_contract {
+	&:before {
+		content: "\f066";
+	}
+}
+
+a.pp_close{
+	display: none;
+	position:absolute;
+	right:-7px;
+	top:-25px;
+	font-size: 0;
+	color: transparent;
+	&:before {
+		background-color: $darkColor;
+		padding: 6px 8px;
+		font-size: 14px;
+		color: $lightColor;
+		font-family: 'FontAwesome';
+		content: "\f00d";
+	}
+}
+
+.pp_loaderIcon{
+	height:50px;
+	width:50px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	margin:-25px 0 0 -25px;
+	text-align: center;
+	-moz-animation: spin 2s infinite linear;
+	-o-animation: spin 2s infinite linear;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+	&:before {
+		display:block;
+		font-family: 'FontAwesome';
+		content: "\f1ce";
+		color: $lightColor;
+		font-size: 50px;
+		line-height: 50px;
+		opacity: 0.6;
+	}
+}
+
+#pp_full_res{
+	line-height:1
+}
+
+#pp_full_res .pp_inline{
+	text-align:left
+}
+
+#pp_full_res .pp_inline p{
+	margin:0 0 15px
+}
+
+div.ppt{
+	color:$lightColor;
+	display:none;
+	font-size:18px;
+	z-index:9999;
+	margin:0 0 5px 20px
+}
+
+.pp_top,.pp_bottom{
+	position:relative
+}
+
+* html .pp_top,* html .pp_bottom{
+	padding:0 20px
+}
+
+.pp_top .pp_left,.pp_bottom .pp_left{
+	height:20px;
+	left:0;
+	position:absolute;
+	width:20px
+}
+
+.pp_top .pp_middle,.pp_bottom .pp_middle{
+	height:20px;
+	left:20px;
+	position:absolute;
+	right:20px
+}
+
+* html .pp_top .pp_middle,* html .pp_bottom .pp_middle{
+	left:0;
+	position:static
+}
+
+.pp_top .pp_right,.pp_bottom .pp_right{
+	height:20px;
+	left:auto;
+	position:absolute;
+	right:0;
+	top:0;
+	width:20px
+}
+
+.pp_fade,.pp_gallery li.default a img{
+	display:none
+}

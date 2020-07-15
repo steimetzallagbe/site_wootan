@@ -1,0 +1,23 @@
+/*widget_banner*/
+.widget_banner {
+	overflow: hidden;
+	line-height: 1;
+	.item-content {
+		padding: 20px;
+		h3 {
+			margin: 0;
+			padding: 8px 0;
+			font-size: 28px;
+		}
+		span {
+			display: inline-block;
+			text-transform: uppercase;
+			padding: 4px 10px 1px;
+			min-width: 120px;
+		}
+		
+	}
+	.small-text {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,296 @@
+/* collapse accordion */
+.panel-heading {
+	.panel-title {
+		font-size: inherit;
+		letter-spacing: 0;
+		padding: 0;
+		position: relative;
+	}
+	.panel-title > a {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 0.2em;
+		line-height: 1;
+		display: block;
+		padding: 23px 50px 23px 30px;
+		margin: -2px;
+		background-color: $mainColor;
+		border: none;
+		color: $lightColor;
+		border-radius: 30px;
+		word-wrap: break-word;
+	}
+
+	.panel-title > a.collapsed:hover,
+	.panel-title > a:hover {
+		background-color: $mainColor;
+		border-color: $mainColor;
+		color: $lightColor;
+		.ds & {
+			background-color: $mainColor;
+			border-color: $mainColor;
+			color: $lightColor;
+		}
+		i {
+			color: $lightColor;
+		}
+	}
+	.panel-title > a.collapsed {
+		color: $lightColor;
+		background-color: $darkgreyColor;
+		.ds & {
+			background-color: $mainColor2;
+		}
+
+		i {
+			color: $mainColor;
+		}
+	}
+	.panel-title > a:after {
+		content: '-';
+		position: absolute;
+		text-align: center;
+		right: 0;
+		top: 0;
+		width: 50px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.panel-title > a.collapsed:after {
+		content: '+';
+	}
+	.panel-title > a > i {
+		position: relative;
+		width: 2em;
+		text-align: center;
+		display: inline-block;
+		line-height: 0;
+	}
+	.panel-title > a:hover:after {
+	}
+
+}
+.panel {
+	box-shadow: none;
+}
+.panel-group .panel {
+	border-radius: 5px;
+	background-color: transparent;
+}
+.panel-default > .panel-heading {
+	background-color: transparent;
+	color: inherit;
+	position: relative;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+}
+.panel-default {
+	border: none;
+}
+.panel-group .panel + .panel {
+	margin-top: 20px;
+}
+.panel-body {
+	border-top:none !important;
+	ul {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.media-left {
+		padding-right: 15px;
+		.img-circle {
+			max-width: 50px;
+		}
+		img {
+			max-width: 80px;
+		}
+	}
+}
+.panel-group .panel-heading + .panel-collapse .panel-body {
+	padding: 20px;
+	border-radius: 0px;
+
+	@media (min-width: 400px) {
+		padding: 30px 30px 10px 30px;
+	}
+}
+
+.collapse-unstyled {
+	.panel h4 {
+		margin: 0 0 0.5em;
+		a {
+			&:after {
+				color: $mainColor;
+				padding: 0 5px;
+				display: inline-block;
+				font-family: 'FontAwesome';
+				content: "\f107";
+			}
+			&.collapsed:after {
+				content: "\f105";
+			}
+		}
+
+	}
+	.panel-content {
+		padding: 10px 20px;
+	}
+}
+
+.ds .accordion2 .panel-heading .panel-title > a{
+	color: $lightColor;
+}
+/* Accordion type 2 */
+.accordion2 {
+	.panel-heading {
+		.panel-title {
+			font-size: inherit;
+			letter-spacing: 0;
+			padding: 0;
+			position: relative;
+		}
+		.panel-title > a {
+			font-size: 16px;
+			text-transform: none;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 1;
+			display: block;
+			padding: 22px 25px 21px 5px;
+			margin: -2px;
+			background-color: transparent;
+			color: $fontColor2;
+			border-top: 1px solid $borderColor;
+			border-left: 0;
+			border-right: 0;
+			border-radius: 0;
+			word-wrap: break-word;
+		}
+
+		.panel-title > a.collapsed:hover,
+		.panel-title > a:hover {
+			background-color: transparent;
+			border-color: $borderColor;
+			color: $mainColor;
+			.ds & {
+				background-color: $mainColor;
+				border-color: $borderColor;
+				color: $lightColor;
+			}
+			i {
+				color: $mainColor;
+			}
+		}
+		.panel-title > a.collapsed {
+			color: $fontColor2;
+			background-color: transparent;
+			.ds & {
+				background-color: transparent;
+				color: $lightColor;
+			}
+
+			i {
+				color: $mainColor;
+			}
+		}
+		.panel-title > a:after {
+
+			content: '-';
+			position: absolute;
+			text-align: right;
+			right: 0;
+			top: 0;
+			width: 20px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 16px;
+			font-weight: 600;
+		}
+		.panel-title > a.collapsed:after {
+			content: '+';
+		}
+		.panel-title > a > i {
+			position: relative;
+			width: 2em;
+			text-align: center;
+			display: inline-block;
+			line-height: 0;
+		}
+
+	}
+	.panel-group .panel:last-of-type {
+		.panel-heading {
+			.panel-title > a {
+				border-bottom: 1px solid $borderColor;
+			}
+		}
+	}
+	.panel {
+		box-shadow: none;
+	}
+	.panel-group .panel {
+		border-radius: 5px;
+		background-color: transparent;
+	}
+	.panel-default > .panel-heading {
+		background-color: transparent;
+		color: inherit;
+		position: relative;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+	}
+	.panel-default {
+		border: none;
+	}
+	.panel-group .panel + .panel {
+		margin-top: 0;
+	}
+	.panel-body {
+		border-top: none !important;
+		ul {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.media-left {
+			padding-right: 15px;
+			.img-circle {
+				max-width: 50px;
+			}
+			img {
+				max-width: 80px;
+			}
+		}
+	}
+	.panel-group .panel-heading + .panel-collapse .panel-body {
+		padding: 0px 3px 20px 3px;
+		border-radius: 0px;
+		z-index: 2;
+	}
+
+	.collapse-unstyled {
+		.panel h4 {
+			margin: 0 0 0.5em;
+			a {
+				&:after {
+					color: $mainColor;
+					padding: 0 5px;
+					display: inline-block;
+					font-family: 'FontAwesome';
+					content: "\f107";
+				}
+				&.collapsed:after {
+					content: "\f105";
+				}
+			}
+
+		}
+		.panel-content {
+			padding: 10px 20px;
+		}
+	}
+}

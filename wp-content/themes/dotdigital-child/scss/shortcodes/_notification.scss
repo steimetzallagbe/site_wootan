@@ -1,0 +1,54 @@
+/* notification */
+.shortcode-notification {
+  &.alert {
+    color: $lightColor;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: 0;
+    border-radius: 0;
+    padding: 12px 15px 12px 40px;
+    margin-bottom: 20px;
+    position: relative;
+    &:before {
+      content: "";
+      font-family: FontAwesome;
+      position: relative;
+      top: 0;
+      left: -20px;
+      font-size: 14px;
+    }
+    @media(min-width: 1200px) {
+      padding: 16px 15px 16px 40px;
+      &:before {
+        left: -10px;
+      }
+    }
+  }
+  &.alert-success {
+    background-color: $colorSuccess;
+    &:before {
+      content: "\f058";
+    }
+  }
+  &.alert-info {
+    background-color: $colorInfo;
+    &:before {
+      content: "\f06a";
+    }
+  }
+  &.alert-warning {
+    background-color: $colorWarning;
+    &:before {
+      content: "\f071";
+    }
+  }
+  &.alert-danger {
+    background-color: $colorDanger;
+    &:before {
+      content: "\f057";
+    }
+  }
+}

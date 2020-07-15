@@ -1,0 +1,94 @@
+/* Shortcode Tabs with Icons list */
+.bootstrap-tabs.tabs-icons {
+  ul.nav-tabs.nav > li {
+    > a {
+      padding: 11px 20px 11px;
+      min-width: auto;
+      border-radius: 30px;
+      margin-bottom: 10px;
+      display: inline-block;
+      margin-right: 10px;
+      background-color: transparent;
+      color: $lightColor;
+      border: 4px solid transparent;
+      .ls & {
+        color: $fontColor2;
+      }
+    }
+    &:last-child {
+      > a {
+        margin-right: 0;
+      }
+    }
+  }
+  &.color_1 {
+    ul.nav-tabs.nav > li {
+      > a {
+        border-color: $mainColor;
+      }
+      &.active {
+        > a {
+          background-color: $mainColor;
+        }
+      }
+    }
+  }
+  &.color_2 {
+    ul.nav-tabs.nav > li {
+      > a {
+        border-color: $mainColor2;
+      }
+      &.active {
+        > a {
+          background-color: $mainColor2;
+        }
+      }
+    }
+  }
+  &.color_3 {
+    ul.nav-tabs.nav > li {
+      > a {
+        border-color: $mainColor3;
+      }
+      &.active {
+        > a {
+          background-color: $mainColor3;
+        }
+      }
+    }
+  }
+  &.color_4 {
+    ul.nav-tabs.nav > li {
+      > a {
+        border-color: $mainColor4;
+      }
+      &.active {
+        > a {
+          background-color: $mainColor4;
+        }
+      }
+    }
+  }
+  .tab-content {
+    margin: 0;
+    padding: 20px 0 0 0;
+    .icons-list ul li .media-left i {
+      color: $lightColor;
+    }
+    .icons-list .media-body {
+      .ds & {
+        color: $fontColor;
+      }
+      a {
+        .ds & {
+          color: $fontColor;
+        }
+        &:hover {
+          .ds & {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}

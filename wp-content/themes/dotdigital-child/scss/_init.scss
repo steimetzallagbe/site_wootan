@@ -1,0 +1,45 @@
+// /* Main variables */
+
+// /* Accent schemes */
+$mainColor: #ff497c !default;
+$mainColor2: #a0ce4e !default;
+$mainColor3: #00bea3 !default;
+$mainColor4: #f1894c !default;
+
+$fontColor: #7f7f7f; //more contrast //+
+$fontColor2: #1f2732; //+
+$fontColorLight: #a4a9b9;
+//background color for light section and font color in dark section
+$lightColor: #ffffff; //+
+$blackColor: #000000; //+
+//color for headings in light section and for background in dark section (.ds)
+$darkgreyColor: #1f2732; //+
+//background color for light muted section (grey - .ls.ms)
+$greyColor: #f4f4f5;//+
+//background color for dark muted section (.ds.ms)
+$darkColor: #191f28;//+
+//border colors for elements in light section (and .with_border elements)
+$borderColor: #dedfe1;//+
+$borderColorRGBA: rgba(#a4a9b9, 0.3);
+$borderColorRGBA2: rgba(#808080, 0.2);
+$backgroundColor: #f4f4f5; //+
+
+//section variables
+//for .with_border
+$darkBorderColor: rgba(#fff, 0.1);
+// for .with_background, .muted_section
+$darkBackgroundColor: rgba($lightColor, 0.05);
+
+///////// color
+$colorBorderColor: rgba(#fff, 0.2);
+
+//////bootstrap colors
+$colorPrimary: $mainColor;
+//green
+$colorSuccess: #a0ce4e; //+
+//blue
+$colorInfo: #009cbe; //+
+//orange
+$colorWarning: #f1b94c; //+
+//red
+$colorDanger: #f14c4c; //+

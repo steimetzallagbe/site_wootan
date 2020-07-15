@@ -1,0 +1,387 @@
+/* 
+** Buttons
+*/
+
+.theme_buttons a,
+.theme_button,
+	//for shop
+.wc-proceed-to-checkout  .checkout-button,
+.buttons a,
+a.wp-block-button__link,
+button,
+input[type="submit"]{
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px 30px 20px;
+	margin-bottom: 4px;
+	line-height: 1;
+	display: inline-block;
+	letter-spacing: 0.2em;
+	text-indent: 0.2em;
+	//breaks builder
+	text-align: center;
+	color: $lightColor;
+	border: 4px solid $mainColor;
+	background-color: $mainColor;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-transition: all 0.4s linear 0s;
+	-moz-transition: all 0.4s linear 0s;
+	-o-transition: all 0.4s linear 0s;
+	-ms-transition: all 0.4s linear 0s;
+	transition: all 0.4s linear 0s;
+
+	&:hover, &:focus, &:active {
+		color: $mainColor;
+		background-color: transparent;
+	}
+
+}
+
+a.wp-block-button__link {
+	color: $lightColor !important;
+	&:hover, &:focus, &:active {
+		color: $mainColor !important;
+		background-color: transparent;
+	}
+}
+
+/* Sizes */
+.theme_button.large_height {
+	padding: 30px 35px 30px;
+}
+.theme_button.medium_height {
+	padding: 20px 30px 20px;
+}
+.theme_button.small_height {
+	padding: 10px 30px 10px;
+}
+
+.theme_button + .theme_button {
+	margin-left: 20px;
+}
+.theme_button.small_button + .theme_button.small_button {
+	margin-left: 8px;
+}
+
+
+.theme_buttons.color1 a,
+.theme_button.color1,
+	//for shop
+.button.alt,
+.btn-accent,
+.form-submit [type="submit"] {
+	color: $lightColor;
+	border-color: $mainColor;
+	background-color: $mainColor;
+	&:hover, &:focus, &:active {
+		color: $mainColor;
+		background-color: transparent;
+	}
+}
+
+.theme_buttons.color2 a,
+.theme_button.color2 {
+	color: $lightColor;
+	border-color: $mainColor2;
+	background-color: $mainColor2;
+	&:hover, &:focus, &:active {
+		color: $mainColor2;
+		background-color: transparent;
+	}
+}
+.theme_buttons.color3 a,
+.theme_button.color3 {
+	color: $lightColor;
+	border-color: $mainColor3;
+	background-color: $mainColor3;
+	&:hover, &:focus, &:active {
+		color: $mainColor3;
+		background-color: transparent;
+	}
+}
+
+.theme_buttons.color4 a,
+.theme_button.color4 {
+	color: $lightColor;
+	border-color: $mainColor4;
+	background-color: $mainColor4;
+	&:hover, &:focus, &:active {
+		color: $mainColor4;
+		background-color: transparent;
+	}
+}
+
+.theme_buttons.color_white a,
+.theme_button.color_white {
+	color: $darkgreyColor;
+	border-color: $lightColor;
+	background-color: $lightColor;
+	box-shadow: 0 0 10px 0 rgba($blackColor, 0.1);
+	&:hover, &:focus, &:active {
+		color: $mainColor;
+		background-color: transparent;
+		border-color: $lightColor;
+		box-shadow: none;
+	}
+}
+
+.theme_buttons.color_grey a,
+.theme_button.color_grey {
+	color: $darkgreyColor;
+	border-color: $greyColor;
+	background-color: $greyColor;
+	&:hover, &:focus, &:active {
+		border-color: $lightColor;
+		background-color: $lightColor;
+		box-shadow: 0 0 10px 0 rgba($blackColor, 0.1);
+	}
+}
+
+
+.theme_buttons a:active,
+.theme_buttons a:hover,
+.theme_buttons a:focus,
+.theme_button:active,
+.theme_button:hover,
+.theme_button:focus {
+	color: $darkgreyColor;
+	opacity: 1;
+	text-decoration: none;
+	outline: none;
+
+	-webkit-transition: all 0.05s linear 0s;
+	-moz-transition: all 0.05s linear 0s;
+	-o-transition: all 0.05s linear 0s;
+	-ms-transition: all 0.05s linear 0s;
+	transition: all 0.05s linear 0s;
+}
+
+.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 4px solid $mainColor;
+	color: $mainColor !important;
+	&:hover, &:focus, &:active {
+		color: $lightColor !important;
+		background-color: $mainColor;
+	}
+}
+.ds{
+	.theme_button.inverse.color1{
+		color: $lightColor;
+	}
+}
+.theme_button.inverse.color1 {
+	color: $mainColor;
+	background-color: transparent;
+	border-color: $mainColor;
+	&:hover, &:focus, &:active {
+		background-color: $mainColor;
+		border-color: $mainColor;
+		color: $lightColor;
+	}
+}
+.theme_button.inverse.color2 {
+	color: $mainColor2;
+	background-color: transparent;
+	border-color: $mainColor2;
+	&:hover, &:focus, &:active {
+		background-color: $mainColor2;
+		border-color: $mainColor2;
+		color: $lightColor;
+	}
+}
+.theme_button.inverse.color3 {
+	color: $mainColor3;
+	background-color: transparent;
+	border-color: $mainColor3;
+	&:hover, &:focus, &:active {
+		background-color: $mainColor3;
+		border-color: $mainColor3;
+		color: $lightColor;
+	}
+}
+.theme_button.inverse.color4 {
+	color: $mainColor4;
+	background-color: transparent;
+	border-color: $mainColor4;
+	&:hover, &:focus, &:active {
+		background-color: $mainColor4;
+		border-color: $mainColor4;
+		color: $lightColor;
+	}
+}
+.theme_button.inverse.color_white {
+	color: $darkgreyColor;
+	background-color: $lightColor;
+	border-color: $greyColor;
+	box-shadow: none;
+	&:hover, &:focus, &:active {
+		background-color: $greyColor;
+		border-color: $greyColor;
+	}
+}
+.theme_button.inverse.color_grey {
+	color: $darkgreyColor;
+	background-color: $lightColor;
+	border-color: $greyColor;
+	box-shadow: none;
+	&:hover, &:focus, &:active {
+		background-color: $greyColor;
+		border-color: $greyColor;
+	}
+}
+
+.wc-proceed-to-checkout .checkout-button {
+	&:hover, &:focus, &:active {
+		color: $mainColor;
+	}
+}
+
+.muted_buttons a,
+.muted_button {
+	opacity: 0.2;
+}
+.small_buttons a,
+.small_button {
+	padding: 5px 7px 5px;
+	text-transform: uppercase;
+	min-width: auto;
+	color: $lightColor !important;
+	&:hover,
+	&:focus {
+		color: $mainColor !important;
+	}
+	&.disabled {
+		color: $mainColor !important;
+		background-color: transparent;
+	}
+}
+.square_buttons a,
+.square_button {
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: auto;
+}
+.wide_buttons a,
+.wide_button {
+	min-width: 230px;
+	@media (min-width: 1600px) {
+		min-width: 230px;
+	}
+	padding-right: 30px;
+	padding-left: 30px;
+}
+.block_buttons a,
+.block_button {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.no_bg_button {
+	background-color: transparent !important;
+
+	&.color1 {
+		color: $mainColor;
+	}
+
+	&[class*="color"] {
+		&:hover, &:focus, &:active {
+			color: $darkgreyColor;
+		}
+	}
+}
+
+/*icons in headings, paragraphs and buttons*/
+h1>[class*="rt-icon"],
+h2>[class*="rt-icon"],
+h3>[class*="rt-icon"],
+h4>[class*="rt-icon"],
+h5>[class*="rt-icon"],
+h6>[class*="rt-icon"]{
+	position: relative;
+	top: .08em;
+	padding-right: 0.1em;
+}
+p>[class*="rt-icon"] {
+	font-size: 1.1em;
+	position: relative;
+	top: .1em;
+	line-height: 0;
+	padding: 0 0.2em;
+	& + [class*="rt-icon"] {
+		margin-left: -0.75em;
+	}
+}
+.theme_buttons a > [class*="rt-icon"],
+.theme_button>[class*="rt-icon"] {
+	font-size: 1.8em;
+	line-height: 0;
+	position: relative;
+	top: 5px;
+	padding: 0 3px;
+}
+
+.theme_buttons a >[class*="glyphicon"],
+.theme_buttons a >[class*="fa-"],
+.theme_button>[class*="glyphicon"],
+.theme_button>[class*="fa-"] {
+	font-size: 1.5em;
+	position: relative;
+	top: 3px;
+	line-height: 0;
+}
+.theme_buttons a >[class*="rt-icon"],
+.theme_buttons a >[class*="glyphicon"],
+.theme_buttons a >[class*="fa-"],
+.theme_button>[class*="rt-icon"],
+.theme_button>[class*="glyphicon"],
+.theme_button>[class*="fa-"] {
+
+}
+
+//button in inline form - same height as a .form-control input box
+.form-inline {
+	[type="submit"],
+	.btn,
+	.theme_button {
+		margin-bottom: 0;
+	}
+}
+
+//bootstrap buttons
+
+.btn-group-lg>.btn,.btn-lg {
+	padding: 16px 16px;
+}
+
+.btn-group-sm>.btn,.btn-sm {
+	padding: 5px 10px;
+}
+
+.btn-group-xs>.btn,.btn-xs {
+	padding: 1px 5px;
+}
+
+.simple_link {
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.read-more {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+//removing reset button for WP
+.theme_button[type="reset"] {
+	display: none;
+}

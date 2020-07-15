@@ -1,0 +1,399 @@
+/* Helpdesk plugin */
+.wordpress-helpdesk,
+.tax-faq_topics {
+  .widget {
+    margin-bottom: 52px;
+  }
+  .widgettitle {
+    font-size: 24px;
+    margin-bottom: 27px;
+    font-weight: 500;
+  }
+  .wordpress-helpdesk-faq-column {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .wordpress-helpdesk-faq-searchform {
+    margin: 20px 0 45px;
+  }
+  .wordpress-helpdesk-faq-searchform-wrap {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    .wordpress-helpdesk-faq-searchform {
+      .form-control {
+        border-radius: 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: $fontColor;
+        font-weight: 500;
+        padding: 6px 12px 6px 30px;
+        &.wordpress-helpdesk-faq-searchterm {
+          height: 60px;
+          background-color: $backgroundColor;
+        }
+      }
+      .searchform-submit {
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 20px;
+        text-align: center;
+        background: transparent;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        outline: 0;
+        color: $mainColor;
+        font-size: 14px;
+        &:hover,
+        &:focus {
+          color: rgba($mainColor, 0.6);
+        }
+      }
+    }
+  }
+  .wordpress-helpdesk-faq-boxed {
+    margin-bottom: 15px;
+    background: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    border: 0;
+    border-radius: 0;
+    .icon-wrap {
+      margin-top: 20px;
+      width: 120px;
+      height: 120px;
+      background: $lightColor;
+      display: inline-block;
+      border-radius: 50%;
+      border: 5px solid $backgroundColor;
+      padding: 5px;
+      .icon-inner {
+        background: $backgroundColor;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $mainColor2;
+      font-size: 50px !important;
+      &.color-1 {
+        color: $mainColor;
+      }
+      &.color-2 {
+        color: $mainColor2;
+      }
+      &.color-3 {
+        color: $mainColor3;
+      }
+      &.color-4 {
+        color: $mainColor4;
+      }
+    }
+    .wordpress-helpdesk-faq-boxed-title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      transition: all 0.2s ease-in-out 0s;
+    }
+    .wordpress-helpdesk-faq-boxed-count {
+      font-size: 16px;
+      font-weight: 300;
+      color: $fontColor;
+      margin-bottom: 20px;
+    }
+    &:hover {
+      .wordpress-helpdesk-faq-boxed-title {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.tax-faq_topics {
+  .wordpress-helpdesk {
+    .wordpress-helpdesk-row {
+      > * {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    .wordpress-helpdesk-faq {
+      margin-bottom: 30px;
+      @media(min-width: 1440px) {
+        padding-left: 40px;
+        position: relative;
+        .wordpress-helpdesk-faq-title {
+          &:before {
+            content: "\f24d";
+            font-family: FontAwesome;
+            color: $mainColor2;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            font-size: 28px;
+          }
+        }
+      }
+      .wordpress-helpdesk-faq-title {
+        font-weight: 500;
+        padding: 10px 0 15px;
+        i {
+          display: none;
+        }
+      }
+      .wordpress-helpdesk-faq-divider {
+        display: none;
+      }
+      .wordpress-helpdesk-faq-link {
+        a {
+          color: $mainColor;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wordpress-helpdesk-my-tickets {
+  .dataTables_wrapper {
+    margin-top: 15px;
+  }
+  label {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 400 !important;
+    line-height: 0;
+    .select_container {
+      font-size: 16px !important;
+      color: $fontColor !important;
+      line-height: 1;
+      > select {
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+  table.dataTable.no-footer {
+    border-bottom: 1px solid $borderColor;
+  }
+  table.dataTable thead th,
+  table.dataTable thead td {
+    padding: 12px 18px;
+    border-bottom: 1px solid $borderColor;
+  }
+  table.dataTable thead th,
+  table.dataTable tfoot th {
+    font-weight: 400;
+  }
+  table.dataTable tbody th,
+  table.dataTable tbody td {
+    padding: 17px 14px;
+  }
+  .dataTables_wrapper .dataTables_filter input {
+    margin-left: 0;
+    height: 60px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .wordpress-helpdesk-my-tickets-header {
+    background-color: $backgroundColor;
+  }
+  .dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+    padding-top: 1.5em;
+  }
+  .dataTables_wrapper .dataTables_paginate {
+    float: right;
+    text-align: right;
+    padding-top: 1em;
+  }
+  .dataTables_wrapper .dataTables_paginate {
+    .paginate_button {
+      display: inline-block;
+      margin-right: 4px;
+      margin-left: 0;
+      margin-bottom: 7px;
+      padding: 0.5em 1.2em;
+      min-width: 3em;
+      text-align: center;
+      line-height: inherit;
+    }
+    .paginate_button,
+    .paginate_button.current {
+      color: $fontColor !important;
+      border: 2px solid $borderColor;
+      border-radius: 5px !important;
+      background: transparent !important;
+    }
+    .paginate_button.current {
+      border: 2px solid $mainColor;
+    }
+    .paginate_button:hover,
+    .paginate_button:focus,
+    .paginate_button:active {
+      box-shadow: none !important;
+      border: 2px solid $mainColor;
+    }
+    .paginate_button.previous,
+    .paginate_button.next {
+      font-size: 0;
+      width: 50px;
+      height: 50px;
+      line-height: 45px;
+      &:before {
+        font-family: FontAwesome;
+        font-size: 18px;
+        content: "\f104";
+      }
+    }
+    .paginate_button.next {
+      &:before {
+        content: "\f105";
+      }
+    }
+  }
+}
+
+/* Helpdesk widgets */
+.wordpress-helpdesk-sidebar {
+  .widget-first {
+    .widgettitle {
+      margin-top: 15px;
+    }
+  }
+}
+.wordpress-helpdesk-faq-list,
+.widget_faq_topics {
+  li {
+    padding: 8px 0 8px 0;
+    margin-bottom: 0.2em;
+    list-style: none;
+    border-bottom: 1px solid $borderColor;
+    i {
+      color: $mainColor;
+      margin-right: 18px;
+      font-size: 16px;
+    }
+  }
+}
+.wordpress-helpdesk-faq-list li,
+.widget_faq_topics li {
+  padding: 9px 0 9px 0;
+  margin-bottom: 0;
+  list-style: none;
+  border-bottom: 1px solid rgba(76, 76, 76, 0.1);
+  &:first-child {
+    border-top: 1px solid rgba(76, 76, 76, 0.1);
+  }
+}
+
+.widget_faq_live_search {
+  .wordpress-helpdesk-faq-searchform {
+    margin: 0 0 45px;
+  }
+}
+
+/* Helpdesk single page */
+.single-page-article {
+  .wordpress-helpdesk {
+    .dataTables_length {
+      label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.single-ticket {
+  .wordpress-helpdesk-single-title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .wordpress-helpdesk-single-description-title {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .wordpress-helpdesk-ticket-attachments-title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .wordpress-helpdesk-agent-box,
+  .wordpress-helpdesk-reporter-box {
+    font-size: 12px;
+    color: $fontColor2;
+    .wordpress-helpdesk-col-sm-3,
+    .wordpress-helpdesk-col-sm-9 {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .wordpress-helpdesk-agent-box-title,
+    .wordpress-helpdesk-reporter-box-title {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.wordpress-helpdesk-comments {
+  .comment-form p.form-submit {
+    margin-top: 34px;
+    margin-bottom: 0;
+    .btn {
+      color: $lightColor !important;
+      span {
+        font-size: 12px;
+        line-height: 1.6em;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      &:hover,
+      &:focus {
+        color: $fontColor2;
+      }
+    }
+  }
+  .wp-editor-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .comments-area {
+    margin-top: 30px;
+    .quicktags-toolbar {
+        .ed_button {
+          width: auto;
+          display: inline-block;
+          transition: all 0.2s ease-in-out 0s;
+          &:hover {
+            background-color: $mainColor;
+          }
+        }
+    }
+  }
+}

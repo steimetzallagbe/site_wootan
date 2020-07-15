@@ -1,0 +1,332 @@
+/*
+**widgets
+*/
+aside,
+.before-loop-area {
+	.widget-title {
+		text-align: left;
+		position: relative;
+		display: block;
+		font-weight: bold;
+	}
+	& > div + div {
+		margin-top: 10px;
+		& > .widget-title,
+		&.widget_no_background .widget-title {
+			margin-top: 15px;
+		}
+	}
+	& .widget + .widget {
+		margin-top: 52px;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="url"]:focus,
+	input[type="password"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="number"]:focus,
+	textarea:focus,
+	select:focus,
+	.form-control:focus {
+		border-color: $borderColorRGBA;
+	}
+}
+
+.before-loop-area  {
+	.widget {
+		margin-top: 30px;
+		margin-bottom: 40px;
+		display: block;
+		overflow: hidden;
+		.widget-title {
+			margin-top: 40px;
+			margin-bottom: 55px;
+		}
+	}
+	.widget.widget-first {
+		margin-top: 0;
+	}
+}
+
+//for wordpress widgets wrapper
+.widget-theme-wrapper {
+	&.with_background,
+	&.muted_background,
+	&.cs,
+	&.ds,
+	&.ls {
+		padding: 35px;
+	}
+}
+
+/* affix-aside */
+.affix-aside {
+	position: relative;
+	&.affix {
+		position: fixed;
+		top: 50px;
+	}
+	@media(max-width: 767px) {
+		&,
+		&.affix,
+		&.affix-bottom  {
+			position: static;
+			width: inherit !important;
+		}
+	}
+}
+
+//Maybe remove module header:
+.module-header {
+	margin: 0 0 38px;
+	text-transform: capitalize;
+	font-size: 40px;
+	.page_footer & {
+		font-size: 28px;
+	}
+}
+
+.widget > h3, 
+.widget-title{
+	font-size: 24px;
+	margin: 0 0 32px;
+	text-transform: none;
+	font-weight: 500;
+	position: relative;
+	line-height: 32px;
+	.big_title & {
+		font-size: 30px;
+	}
+}
+.widget {
+	&:before,
+	&:after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		ul {
+
+			li {
+				padding-left: 20px;
+			}
+		}
+	}
+	li {
+		position: relative;
+	}
+
+	.vertical-item {
+		h4 {
+			font-size: 20px;
+			margin: 17px 0 0;
+		}
+
+		& + & {
+			margin-top: 16px;
+		}
+	}
+	//for selects that we cannot add a .form-control class - maybe remove
+	select {
+		width: 100%;
+		max-width: 100%;
+		height: 50px;
+		padding-left: 20px;
+		padding-right: 40px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		font-size: 16px;
+		border: 1px solid $borderColor;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+}
+.ds .widget_text{
+	&.special{
+		background-color: $darkColor;
+	}
+}
+.widget_text {
+	ul {
+		padding-left: 10px;
+	}
+	&.special {
+		background-color: $backgroundColor;
+		padding: 30px;
+		@media(min-width:768px){
+			padding: 35px 40px 35px 40px;
+		}
+		.widget-title {
+			margin-top: 0;
+			margin-bottom: 12px;
+		}
+	}
+}
+
+
+.page_footer {
+	&.ds {
+		color: $fontColor;
+	}
+	p {
+		line-height: 25px;
+	}
+	.special-title {
+		.widget-title {
+			@media(min-width: 992px) {
+				margin-top: 95px !important;
+				margin-bottom: 32px !important;
+			}
+		}
+	}
+
+	&.before-footer{
+		border-bottom: 1px solid darken($borderColor, 50%);
+		.col-xs-12{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-left: 0!important;
+			padding-right: 0!important;
+			@media (max-width: 991px) {
+				flex-direction: column;
+				& > div:not(:first-child){
+					margin-top: 50px;
+				}
+			}
+			& > div{
+				flex-basis: 33%;
+				padding: 0 15px;
+				&:first-child{
+					display: flex;
+					justify-content: flex-start;
+				}
+				&:nth-child(2){
+					text-align: center;
+				}
+				&:last-child{
+					display: flex;
+					justify-content: flex-end;
+				}
+				input{
+					text-align: left;
+				}
+				.mc4wp-form-fields {
+					max-width: 250px;
+					.text_for_footer{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.widget + .widget {
+		.widget-title {
+			margin-top: 50px;
+		}
+	}
+
+	.widget_banner {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.widget_text {
+		margin-bottom: 20px;
+	}
+	.widget_craftpro_twitter {
+		ul.tweet_list {
+			padding-top: 5px;
+			overflow: hidden;
+		}
+	}
+	.widget_recent_entries {
+		ul {
+			li {
+				&:first-of-type {
+					padding: 0 0 11px 0;
+				}
+				&:before {
+					display: none;
+				}
+				.post-date {
+					display: block;
+				}
+			}
+		}
+	}
+	#sb_instagram {
+		margin-top: -10px !important;
+	}
+	.item-meta {
+		color: $fontColor;
+	}
+
+	.widget_popular_entries .widget-title + ul {
+		margin-top: -2px;
+	}
+	.widget_recent_entries .widget-title + ul,
+	.widget_recent_comments .widget-title + ul,
+	.widget_archive .widget-title + ul,
+	.widget_categories .widget-title + ul,
+	.widget_meta .widget-title + ul,
+	.widget_nav_menu ul.menu,
+	.widget_pages  .widget-title + ul {
+		margin-top: -22px;
+	}
+	.widget,
+	.widget .widget-title{
+		text-align: left;
+	}
+	.widget-title{
+		font-size: 30px;
+	}
+	.widget.text-center,
+	.widget.text-center .widget-title{
+		text-align: center;
+	}
+	@media (max-width: 991px) {
+		.horizontal-menu.widget{
+			text-align: center;
+		}
+	}
+}
+
+/* Widget Instagram */
+#sb_instagram {
+	padding-bottom: 0 !important;
+	#sbi_images {
+		margin: -10px;
+		width: calc(100% + 20px);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	aside {
+		margin-top: 60px !important;
+	}
+	aside.shortcode-widget-area {
+		margin-top: 0 !important;
+	}
+}
+
+@import 'widgets/search_mailchimp';
+@import 'widgets/nav_recent_categories';
+@import 'widgets/tags';
+@import 'widgets/calendar';
+@import 'widgets/banner';
+@import 'widgets/socials';
+@import 'widgets/icons_list';
+@import 'widgets/slider';
+@import 'widgets/flickr';
+@import 'widgets/twitter';
+@import 'widgets/posts';
+@import 'widgets/theme_posts';
+@import 'widgets/post_tabs';
+@import 'widgets/rss';

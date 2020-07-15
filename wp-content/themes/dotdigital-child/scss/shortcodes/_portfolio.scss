@@ -1,0 +1,81 @@
+/* portfolio-shortcode */
+.portfolio-shortcode {
+	&.owl-carousel .gallery-item {
+		margin-bottom: 0 !important;
+	}
+	.gallery-item {
+		.media-wrap {
+			padding: 35px 40px;
+		}
+		.media-links {
+			&:before {
+				background-color: rgba($lightColor, 0.9);
+			}
+		}
+	}
+	.gallery-item.item-with-title {
+		margin-bottom: 10px !important;
+		.media-links  {
+			.links-wrap {
+				text-align: center;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin-top: 0;
+				a {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+					&:before,
+					&.p-link {
+						display: none;
+					}
+				}
+			}
+		}
+		.item-content {
+			position: absolute;
+			bottom: 0;
+			padding: 10px 20px 20px;
+			width: 100%;
+			z-index: 2;
+			@media(min-width: 400px) {
+				padding: 10px 30px 30px;
+			}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 3;
+				background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 );
+			}
+			.categories-links {
+				display: none;
+			}
+			.item-title {
+				z-index: 4;
+				position: relative;
+				margin-top: 0;
+				margin-bottom: 0;
+				a {
+					color: $lightColor;
+					&:hover {
+						color: $mainColor;
+					}
+				}
+			}
+		}
+	}
+}
